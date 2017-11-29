@@ -59,6 +59,8 @@ textarea { display: none; }
 
 .remark-code, .remark-inline-code { font-family: 'Fira Mono', monospace; }
 
+.remark-inline-code { font-size: .85em; background-color: #f3f3f3 }
+
 .hljs-subst { color: black; }
 .hljs-number { color: #a31515; }
 
