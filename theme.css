@@ -42,12 +42,17 @@ blockquote {
 	text-align: justify;
 }
 
+table {
+	border-collapse: collapse;
+	text-align: center;
+}
+
 table, th, td {
 	border: 1px solid black;
 }
 
-	td {
-		padding: .5rem;
+	th, td {
+		padding: .25rem .5rem;
 	}
 
 textarea { display: none; }
