@@ -46,6 +46,14 @@ blockquote {
 	text-align: justify;
 }
 
+table, th, td {
+	border: 1px solid black;
+}
+
+	td {
+		padding: .5rem;
+	}
+
 .remark-slide-content {
 	/*background-color: #fff;
 	background-position: center;
