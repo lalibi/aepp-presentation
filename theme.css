@@ -28,13 +28,6 @@ ul {
 	margin-left: -1rem;
 }
 
-textarea { display: none; }
-
-.remark-code, .remark-inline-code { font-family: 'Fira Mono', monospace; }
-
-.hljs-subst { color: black; }
-.hljs-number { color: #a31515; }
-
 pre {
 	margin: 0;
 }
@@ -53,6 +46,13 @@ table, th, td {
 	td {
 		padding: .5rem;
 	}
+
+textarea { display: none; }
+
+.remark-code, .remark-inline-code { font-family: 'Fira Mono', monospace; }
+
+.hljs-subst { color: black; }
+.hljs-number { color: #a31515; }
 
 .remark-slide-content {
 	/*background-color: #fff;
