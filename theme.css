@@ -32,7 +32,7 @@ textarea { display: none; }
 
 .remark-code, .remark-inline-code { font-family: 'Fira Mono', monospace; }
 
-.hljs-subst { color: darkgray; }
+.hljs-subst { color: black; }
 .hljs-number { color: #a31515; }
 
 pre {
