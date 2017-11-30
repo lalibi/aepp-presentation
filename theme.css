@@ -59,7 +59,13 @@ textarea { display: none; }
 
 .remark-code, .remark-inline-code { font-family: 'Fira Mono', monospace; }
 
-.remark-inline-code { font-size: .85em; background-color: #f3f3f3 }
+.remark-inline-code {
+	font-size: .85em;
+	background-color: #efefef;
+	border: 1px solid #e0e0e0;
+	border-radius: .25em;
+	padding: .25em;
+}
 
 .hljs-subst { color: black; }
 .hljs-number { color: #a31515; }
