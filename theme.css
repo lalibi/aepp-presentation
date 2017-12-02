@@ -105,3 +105,28 @@ textarea { display: none; }
 	color: #f3f3f3;
 	line-height: 1.2em;
 }
+
+/* Export to PDF · Issue #50 · gnab/remark - https://goo.gl/WaosRl */
+@page {
+	/* 16:9 */
+/*	size: 1210px 681px; */
+	/* 4:3 */
+/*	size: 908px 681px; */
+	size: 1024px 768px;
+	margin: 0;
+}
+
+@media print {
+	.remark-slide-scaler {
+		width: 100% !important;
+		height: 100% !important;
+		transform: scale(1) !important;
+		top: 0 !important;
+		left: 0 !important;
+	}
+
+	.remark-code-line {
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+}
