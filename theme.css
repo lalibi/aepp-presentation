@@ -82,7 +82,7 @@ textarea { display: none; }
 .remark-inline-code {
 	background-color: #efefef;
 	border: 1px solid #e0e0e0;
-	white-space: nowrap;
+	white-space: pre;
 }
 
 .hljs-subst { color: black; }
