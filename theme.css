@@ -57,21 +57,6 @@ table, th, td {
 
 textarea { display: none; }
 
-.remark-code, .remark-inline-code { 
-	font-family: 'Fira Mono', monospace;
-	border-radius: .25em;
-}
-
-.remark-inline-code {
-	font-size: .85em;
-	background-color: #efefef;
-	border: 1px solid #e0e0e0;
-	padding: .25em;
-}
-
-.hljs-subst { color: black; }
-.hljs-number { color: #a31515; }
-
 .remark-slide-content {
 	/*background-color: #fff;
 	background-position: center;
@@ -87,6 +72,21 @@ textarea { display: none; }
 	border: 1px solid lightgrey;
     background: #fcfcfc !important;
 }
+
+.remark-code, .remark-inline-code {
+	font-family: 'Fira Mono', monospace;
+	border-radius: .25em;
+	margin-top: 1em;
+}
+
+.remark-inline-code {
+	background-color: #efefef;
+	border: 1px solid #e0e0e0;
+	white-space: nowrap;
+}
+
+.hljs-subst { color: black; }
+.hljs-number { color: #a31515; }
 
 .footnote {
 	position: absolute;
