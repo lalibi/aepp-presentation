@@ -92,6 +92,7 @@ textarea { display: none; }
 	position: absolute;
 	bottom: 0;
 	font-size: 14px;
+	font-style: italic;
 }
 
 .inverse {
