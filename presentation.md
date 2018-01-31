@@ -2118,7 +2118,7 @@ i <- α
 ]
 
 ---
-layout: false
+layout: true
 
 ## Γενικές Ασκήσεις εμπέδωσης μέχρι και τη Δομή Επανάληψης
 
@@ -2244,9 +2244,11 @@ layout: true
 
 - Εισαγωγή στοιχείων
 - Εμφάνιση στοιχείων
+
 --
 - Αναζήτηση <sup>1</sup>
 - Ταξινόμηση <sup>1</sup>
+
 --
 - Αντιγραφή
 - Συγχώνευση
@@ -2884,6 +2886,9 @@ layout: true
 [themata_epan_2009]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2009_imerisia_epanaliptikes.pdf
 [lyseis_epan_2009]:  http://www.aepp.edu.gr/wp-content/uploads/2011/07/lyseis_aepp_2009_epanaliptikes.pdf
 
+[themata_2010]: http://www.aepp.edu.gr/wp-content/uploads/2010/05/aepp_2010_imerisia.pdf
+[lyseis_2010]:  http://www.aepp.edu.gr/wp-content/uploads/2010/05/lyseis_aepp_2010.pdf
+
 [themata_epan_2010]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2010_imerisia_epanaliptikes.pdf
 [lyseis_epan_2010]:  http://www.aepp.edu.gr/wp-content/uploads/2010/04/lyseis_aepp_2010_epanaliptikes.pdf
 
@@ -2907,6 +2912,9 @@ layout: true
 
 [themata_2014]: http://www.aepp.edu.gr/wp-content/uploads/2011/07/aepp_2014_imerisia.pdf
 [lyseis_2014]:  http://www.aepp.edu.gr/wp-content/uploads/2011/07/lyseis_aepp_2014.pdf
+
+[themata_epan_2014]: http://www.aepp.edu.gr/wp-content/uploads/2011/07/aepp_2014_imerisia_epanaliptikes.pdf
+[lyseis_epan_2014]:  http://www.aepp.edu.gr/wp-content/uploads/2011/07/lyseis_aepp_2014_epanaliptikes.pdf
 
 [themata_2015]: http://www.aepp.edu.gr/wp-content/uploads/2011/07/aepp_2015_imerisia.pdf
 [lyseis_2015]:  http://www.aepp.edu.gr/wp-content/uploads/2011/07/lyseis_aepp_2015.pdf
