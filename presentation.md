@@ -868,6 +868,26 @@ layout: true
 ---
 ### Διάγραμμα Ροής
 
+```flowchart
+st=>start: Αρχή
+e=>end: Τέλος
+op1=>operation: <εντολές-1>
+op2=>operation: <εντολές-2>
+opn=>operation: <εντολές-ν>
+opo=>operation: <εντολές-αλλιώς>
+cond1=>condition: <συνθήκη-1>
+cond2=>condition: <συνθήκη-2>
+condn=>condition: <συνθήκη-v>
+
+st->cond1
+cond1(yes, left)->op1->e
+cond1(no, right)->cond2->e
+cond2(yes, left)->op2->e
+cond2(no, right)->condn->e
+condn(yes, left)->opn->e
+condn(no, right)->opo->e
+```
+
 .footnote[
   Βιβλίο Μαθητή, &sect;2.4.3, σελ.41
 ]
