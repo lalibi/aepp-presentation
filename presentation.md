@@ -157,6 +157,7 @@ layout: true
 ### Παραδείγματα (Θέματα Πανελλαδικών)
 
 - [2009 / Θέμα 1ο - Δ][themata_2009] ([Λύσεις][lyseis_2009])
+    - Αντιστοίχιση
 
 ---
 layout: true
@@ -409,7 +410,10 @@ layout: true
 ### Παραδείγματα (Θέματα Πανελλαδικών)
 
 - [2008 επαν. / Θέμα 1ο - Δ][themata_epan_2008] ([Λύσεις][lyseis_epan_2008])
-- [2015 επάν. / Θέμα A - 5][themata_epan_2015] ([Λύσεις][lyseis_epan_2015])
+    - Αριθμητική έκφραση σε ΓΛΩΣΣΑ
+- [2015 επάν. / Θέμα A - Α5][themata_epan_2015] ([Λύσεις][lyseis_epan_2015])
+    - Αριθμητική έκφραση σε ΓΛΩΣΣΑ
+    - Περιττές παρενθέσεις
 
 ---
 layout: true
@@ -447,6 +451,7 @@ x <- x + 1
 ### Παραδείγματα (Θέματα Πανελλαδικών)
 
 - [2009 / Θέμα 1ο - Β.2][themata_2009] ([Λύσεις][lyseis_2009])
+    - Εκφράσεις σε εντολές εκχώρησης
 
 ---
 ### Αντιμετάθεση μεταβλητών
@@ -497,9 +502,10 @@ layout: true
 ]
 
 ---
-### Ασκήσεις (Θέματα Πανελλαδικών)
+### Παραδείγματα (Θέματα Πανελλαδικών)
 
 - [2012 / Θέμα A - A2][themata_2012] ([Λύσεις][lyseis_2012])
+    - Αντιστοίχιση
 
 ---
 layout: true
@@ -739,6 +745,7 @@ layout: true
 #### Παραδείγματα (Θέματα Πανελλαδικών)
 
 - [2009 / Θέμα 1ο - Γ.2][themata_2009] ([Λύσεις][lyseis_2009])
+    - Συντακτικά & Λογικά λάθη
 
 ---
 layout: true
@@ -1085,8 +1092,12 @@ layout: true
 #### Παραδείγματα (Θέματα Πανελλαδικών)
 
 - [2010 επάν. / Θέμα Α - Α1][themata_epan_2010] ([Λύσεις][lyseis_epan_2010])
+    - Υπολογισμός λογικών εκφράσεων
 - [2011 / Θέμα Α - A4][themata_2011] ([Λύσεις][lyseis_2011])
+    - Απλή επιλογή σε εκχώτρηση & λογική έκφραση
 - [2014 / Θέμα Α - Α2 & A3][themata_2014] ([Λύσεις][lyseis_2014])
+    - Λογικοί τελεστές, συγκριτικοί τελεστές, εκφράσεις, λογικές σταθερές
+    - Εκτέλεση λογικών εκφράσεων
 
 ---
 name: 8.1.1
@@ -1375,16 +1386,17 @@ layout: true
 template: 8.1.1
 layout: true
 
-### Θέματα Πανελλαδικών
+### Παραδείγματα (Θέματα Πανελλαδικών)
 
 ---
 #### Ασκήσεις Εμφωλευμένων και Πολλαπλών Επιλογών
 
 - [2015 / Θέμα Α - Α5 - β.][themata_2015] ([Λύσεις][lyseis_2015])
+    - Λάθος σε πολλαπλή επιλογή
 - [2006 επάν. / Θέμα 1ο - B][themata_epan_2006]
     - Περιττοί έλεγχοι
 - [2012 επάν. / Θέμα Α - A3][themata_epan_2012] ([Λύσεις][lyseis_epan_2012])
-    - Kαμιά φορά χρειάζονται οι "περιττοί" έλεγχοι…
+    - Λάθος σε πολλαπλή επιλογή
 
 ---
 #### Ασκήσεις μετατροπής Πολλαπλών Επιλογών σε Εμφωλευμένες και αντίστροφα
@@ -2890,13 +2902,36 @@ layout: true
 1. Παράρτημα Α, &sect;4.7, Περίπτωση 1 & 2, σελ.61
 ]
 
+---
+---
+[themata_2001]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2001_imerisia.pdf
+
+[themata_2002]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2002_imerisia.pdf
+
+[themata_2003]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2003_imerisia.pdf
+
 [themata_epan_2003]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2003_imerisia_epanaliptikes.pdf
 
-[themata_epan_2006]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2006_imerisia_epanaliptikes.pdf
-[lyseis_epan_2006]:  http://www.aepp.edu.gr/wp-content/uploads/2011/07/lyseis_aepp_2008_epanaliptikes.pdf
+[themata_2004]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2004_imerisia.pdf
 
-[themata_2008]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2008_imerisia_epanaliptikes.pdf
-[lyseis_2008]:  http://www.aepp.edu.gr/wp-content/uploads/2011/07/lyseis_aepp_2008_epanaliptikes.pdf
+[themata_epan_2004]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2004_imerisia_epanaliptikes.pdf
+
+[themata_2005]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2005_imerisia.pdf
+
+[themata_epan_2005]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2005_imerisia_epanaliptikes.pdf
+
+[themata_2006]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2006_imerisia.pdf
+
+[themata_epan_2006]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2006_imerisia_epanaliptikes.pdf
+
+[themata_2007]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2007_imerisia.pdf
+
+[themata_epan_2007]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2007_imerisia_epanaliptikes.pdf
+
+[themata_2008]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2008_imerisia1.pdf
+
+[themata_epan_2008]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2008_imerisia_epanaliptikes.pdf
+[lyseis_epan_2008]:  http://www.aepp.edu.gr/wp-content/uploads/2011/07/lyseis_aepp_2008_epanaliptikes.pdf
 
 [themata_2009]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2009_imerisia.pdf
 [lyseis_2009]:  http://www.aepp.edu.gr/wp-content/uploads/2010/04/lyseis_aepp_2009.pdf
