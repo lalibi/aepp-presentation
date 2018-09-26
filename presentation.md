@@ -143,14 +143,14 @@ layout: true
 
 ---
 - Γιατί είναι αναγκαίοι oι τύποι δεδομένων και η δήλωσή τους;
-    - `9` ≠ `9.0`
-    - `9` ≠ `'9'`
-        - `00001001` ≠ `00111011`
-    - `2005` ≠ `'2005'`
-        - `2005` => `‭00000000000000000000011111010101‬`
-        - `'2005'` => `‭00110010‬ ‭00110000‬ ‭00110000‬ ‭00110101‬`
-    - Πίνακας ASCII (http://www.asciitable.com/)
-    - `ΑΛΗΘΗΣ` ≠ `'ΑΛΗΘΗΣ'`
+  - `9` ≠ `9.0`
+  - `9` ≠ `'9'`
+    - `00001001` ≠ `00111011`
+  - `2005` ≠ `'2005'`
+    - `2005` => `‭00000000000000000000011111010101‬`
+    - `'2005'` => `‭00110010‬ ‭00110000‬ ‭00110000‬ ‭00110101‬`
+  - Πίνακας ASCII (http://www.asciitable.com/)
+  - `ΑΛΗΘΗΣ` ≠ `'ΑΛΗΘΗΣ'`
 - Γιατί υπάρχουν ακέραιες και πραγματικές τιμές, ενώ οι ακέραιοι είναι υποσύνολο των πραγματικών;
 
 ---
@@ -342,7 +342,7 @@ layout: true
 ### Συχνές χρήσης του div και του mod.
 
 - Έλεγχος αν ένας αριθμός είναι άρτιος ή περιττός.
-  - `x mod ? == ?`
+    - `x mod ? == ?`
 - Τι μέρα είναι η 257 μέρα ενός χρόνου αν η πρώτη μέρα του έτους είναι Κυριακή;
 - Αν ένα σινεμά έχει 10 σειρές με 8 καθίσματα σε κάθε σειρά, σε ποια σειρά και ποια γραμμή θα κάτσει ο No. 37 θεατής;
 
@@ -3840,73 +3840,73 @@ _1ω_
     Η μερικώς περιορισμένη εμβέλεια προσφέρει μερικά πλεονεκτήματα στον πεπειραμένο προγραμματιστή, αλλά για τον αρχάριο περιπλέκει το πρόγραμμα δυσκολεύοντας την ανάπτυξή του.
 
 ---
-[themata_2001]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2001_imerisia.pdf
+[themata_2001]: http://www.aepp.edu.gr/files/aepp_2001_imerisia.pdf
 
-[themata_2002]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2002_imerisia.pdf
+[themata_2002]: http://www.aepp.edu.gr/files/aepp_2002_imerisia.pdf
 
-[themata_2003]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2003_imerisia.pdf
+[themata_2003]: http://www.aepp.edu.gr/files/aepp_2003_imerisia.pdf
 
-[themata_epan_2003]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2003_imerisia_epanaliptikes.pdf
+[themata_epan_2003]: http://www.aepp.edu.gr/files/aepp_2003_imerisia_epanaliptikes.pdf
 
-[themata_2004]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2004_imerisia.pdf
+[themata_2004]: http://www.aepp.edu.gr/files/aepp_2004_imerisia.pdf
 
-[themata_epan_2004]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2004_imerisia_epanaliptikes.pdf
+[themata_epan_2004]: http://www.aepp.edu.gr/files/aepp_2004_imerisia_epanaliptikes.pdf
 
-[themata_2005]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2005_imerisia.pdf
+[themata_2005]: http://www.aepp.edu.gr/files/aepp_2005_imerisia.pdf
 
-[themata_epan_2005]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2005_imerisia_epanaliptikes.pdf
+[themata_epan_2005]: http://www.aepp.edu.gr/files/aepp_2005_imerisia_epanaliptikes.pdf
 
-[themata_2006]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2006_imerisia.pdf
+[themata_2006]: http://www.aepp.edu.gr/files/aepp_2006_imerisia.pdf
 
-[themata_epan_2006]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2006_imerisia_epanaliptikes.pdf
+[themata_epan_2006]: http://www.aepp.edu.gr/files/aepp_2006_imerisia_epanaliptikes.pdf
 
-[themata_2007]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2007_imerisia.pdf
+[themata_2007]: http://www.aepp.edu.gr/files/aepp_2007_imerisia.pdf
 
-[themata_epan_2007]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2007_imerisia_epanaliptikes.pdf
+[themata_epan_2007]: http://www.aepp.edu.gr/files/aepp_2007_imerisia_epanaliptikes.pdf
 
-[themata_2008]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2008_imerisia1.pdf
+[themata_2008]: http://www.aepp.edu.gr/files/aepp_2008_imerisia1.pdf
 
-[themata_epan_2008]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2008_imerisia_epanaliptikes.pdf
-[lyseis_epan_2008]:  http://www.aepp.edu.gr/wp-content/uploads/2011/07/lyseis_aepp_2008_epanaliptikes.pdf
+[themata_epan_2008]: http://www.aepp.edu.gr/files/aepp_2008_imerisia_epanaliptikes.pdf
+[lyseis_epan_2008]:  http://www.aepp.edu.gr/files/lyseis_aepp_2008_epanaliptikes.pdf
 
-[themata_2009]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2009_imerisia.pdf
-[lyseis_2009]:  http://www.aepp.edu.gr/wp-content/uploads/2010/04/lyseis_aepp_2009.pdf
+[themata_2009]: http://www.aepp.edu.gr/files/aepp_2009_imerisia.pdf
+[lyseis_2009]:  http://www.aepp.edu.gr/files/lyseis_aepp_2009.pdf
 
-[themata_epan_2009]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2009_imerisia_epanaliptikes.pdf
-[lyseis_epan_2009]:  http://www.aepp.edu.gr/wp-content/uploads/2011/07/lyseis_aepp_2009_epanaliptikes.pdf
+[themata_epan_2009]: http://www.aepp.edu.gr/files/aepp_2009_imerisia_epanaliptikes.pdf
+[lyseis_epan_2009]:  http://www.aepp.edu.gr/files/lyseis_aepp_2009_epanaliptikes.pdf
 
-[themata_2010]: http://www.aepp.edu.gr/wp-content/uploads/2010/05/aepp_2010_imerisia.pdf
-[lyseis_2010]:  http://www.aepp.edu.gr/wp-content/uploads/2010/05/lyseis_aepp_2010.pdf
+[themata_2010]: http://www.aepp.edu.gr/files/aepp_2010_imerisia.pdf
+[lyseis_2010]:  http://www.aepp.edu.gr/files/lyseis_aepp_2010.pdf
 
-[themata_epan_2010]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2010_imerisia_epanaliptikes.pdf
-[lyseis_epan_2010]:  http://www.aepp.edu.gr/wp-content/uploads/2010/04/lyseis_aepp_2010_epanaliptikes.pdf
+[themata_epan_2010]: http://www.aepp.edu.gr/files/aepp_2010_imerisia_epanaliptikes.pdf
+[lyseis_epan_2010]:  http://www.aepp.edu.gr/files/lyseis_aepp_2010_epanaliptikes.pdf
 
-[themata_2011]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2011_imerisia.pdf
-[lyseis_2011]:  http://www.aepp.edu.gr/wp-content/uploads/2010/04/lyseis_aepp_2011.pdf
+[themata_2011]: http://www.aepp.edu.gr/files/aepp_2011_imerisia.pdf
+[lyseis_2011]:  http://www.aepp.edu.gr/files/lyseis_aepp_2011.pdf
 
-[themata_epan_2011]: http://www.aepp.edu.gr/wp-content/uploads/2010/04/aepp_2011_imerisia_epanaliptikes.pdf
-[lyseis_epan_2011]:  http://www.aepp.edu.gr/wp-content/uploads/2010/04/lyseis_aepp_2011_epanaliptikes.pdf
+[themata_epan_2011]: http://www.aepp.edu.gr/files/aepp_2011_imerisia_epanaliptikes.pdf
+[lyseis_epan_2011]:  http://www.aepp.edu.gr/files/lyseis_aepp_2011_epanaliptikes.pdf
 
-[themata_2012]: http://www.aepp.edu.gr/wp-content/uploads/2011/07/aepp_2012_imerisia.pdf
-[lyseis_2012]:  http://www.aepp.edu.gr/wp-content/uploads/2011/07/lyseis_aepp_2012.pdf
+[themata_2012]: http://www.aepp.edu.gr/files/aepp_2012_imerisia.pdf
+[lyseis_2012]:  http://www.aepp.edu.gr/files/lyseis_aepp_2012.pdf
 
-[themata_epan_2012]: http://www.aepp.edu.gr/wp-content/uploads/2011/07/aepp_2012_imerisia_epanaliptikes.pdf
-[lyseis_epan_2012]:  http://www.aepp.edu.gr/wp-content/uploads/2011/07/lyseis_aepp_2012_epanaliptikes.pdf
+[themata_epan_2012]: http://www.aepp.edu.gr/files/aepp_2012_imerisia_epanaliptikes.pdf
+[lyseis_epan_2012]:  http://www.aepp.edu.gr/files/lyseis_aepp_2012_epanaliptikes.pdf
 
-[themata_2013]: http://www.aepp.edu.gr/wp-content/uploads/2011/07/aepp_2013_imerisia.pdf
-[lyseis_2013]:  http://www.aepp.edu.gr/wp-content/uploads/2011/07/lyseis_aepp_2013.pdf
+[themata_2013]: http://www.aepp.edu.gr/files/aepp_2013_imerisia.pdf
+[lyseis_2013]:  http://www.aepp.edu.gr/files/lyseis_aepp_2013.pdf
 
-[themata_epan_2013]: http://www.aepp.edu.gr/wp-content/uploads/2011/07/aepp_2013_imerisia_epanaliptikes.pdf
-[lyseis_epan_2013]:  http://www.aepp.edu.gr/wp-content/uploads/2011/07/lyseis_aepp_2013_epanaliptikes.pdf
+[themata_epan_2013]: http://www.aepp.edu.gr/files/aepp_2013_imerisia_epanaliptikes.pdf
+[lyseis_epan_2013]:  http://www.aepp.edu.gr/files/lyseis_aepp_2013_epanaliptikes.pdf
 
-[themata_2014]: http://www.aepp.edu.gr/wp-content/uploads/2011/07/aepp_2014_imerisia.pdf
-[lyseis_2014]:  http://www.aepp.edu.gr/wp-content/uploads/2011/07/lyseis_aepp_2014.pdf
+[themata_2014]: http://www.aepp.edu.gr/files/aepp_2014_imerisia.pdf
+[lyseis_2014]:  http://www.aepp.edu.gr/files/lyseis_aepp_2014.pdf
 
-[themata_epan_2014]: http://www.aepp.edu.gr/wp-content/uploads/2011/07/aepp_2014_imerisia_epanaliptikes.pdf
-[lyseis_epan_2014]:  http://www.aepp.edu.gr/wp-content/uploads/2011/07/lyseis_aepp_2014_epanaliptikes.pdf
+[themata_epan_2014]: http://www.aepp.edu.gr/files/aepp_2014_imerisia_epanaliptikes.pdf
+[lyseis_epan_2014]:  http://www.aepp.edu.gr/files/lyseis_aepp_2014_epanaliptikes.pdf
 
-[themata_2015]: http://www.aepp.edu.gr/wp-content/uploads/2011/07/aepp_2015_imerisia.pdf
-[lyseis_2015]:  http://www.aepp.edu.gr/wp-content/uploads/2011/07/lyseis_aepp_2015.pdf
+[themata_2015]: http://www.aepp.edu.gr/files/aepp_2015_imerisia.pdf
+[lyseis_2015]:  http://www.aepp.edu.gr/files/lyseis_aepp_2015.pdf
 
-[themata_epan_2015]: http://www.aepp.edu.gr/wp-content/uploads/2011/07/aepp_2015_imerisia_epanaliptikes.pdf
-[lyseis_epan_2015]:  http://www.aepp.edu.gr/wp-content/uploads/2011/07/lyseis_aepp_2015_epanaliptikes.pdf
+[themata_epan_2015]: http://www.aepp.edu.gr/files/aepp_2015_imerisia_epanaliptikes.pdf
+[lyseis_epan_2015]:  http://www.aepp.edu.gr/files/lyseis_aepp_2015_epanaliptikes.pdf
