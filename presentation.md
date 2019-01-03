@@ -3150,7 +3150,7 @@ sum ← 0
 ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ
 
 ΓΙΑ i ΑΠΟ 1 μέχρι m
-    ΓΙΑ j ΑΠΟ 1 ΜεΧΡΙ n
+    ΓΙΑ j ΑΠΟ 1 ΜΕΧΡΙ n
         sum ← sum + table[i,j]
         row[i] ← row[i] + table[i,j]
         col[j] ← col[j] + table[i,j]
