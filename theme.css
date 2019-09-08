@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h2 {
-	margin: 1rem 0;
+	margin: 1rem 0 2rem;
 	border-bottom: 1px solid lightgray;
 }
 
@@ -74,6 +74,14 @@ textarea { display: none; }
 	font-size: 18px;
 	/*padding: 1em 4em 1em 4em;*/
 }
+
+	.remark-slide-content.long {
+		font-size: 16px;
+	}
+
+	.remark-slide-content h2 {
+		font-size: 44px;
+	}
 
 .remark-code {
 	font-size: 15px;
