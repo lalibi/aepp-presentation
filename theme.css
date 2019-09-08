@@ -75,6 +75,19 @@ textarea { display: none; }
 	/*padding: 1em 4em 1em 4em;*/
 }
 
+	.remark-slide-content.cover-page  h1 {
+		font-size: 5rem;
+	}
+
+	.remark-slide-content.cover-page h2 {
+		font-size: 3rem;
+		border-bottom: 0px;
+	}
+
+	.remark-slide-content.cover-page h3 {
+		font-size: 1.75rem;
+	}
+
 	.remark-slide-content.long {
 		font-size: 16px;
 	}
