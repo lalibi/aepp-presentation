@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h2 {
-	margin: 1rem 0 2rem;
+	margin: 1rem 0 1.5rem;
 	border-bottom: 1px solid lightgray;
 }
 
@@ -24,7 +24,7 @@ h4 {
 }
 
 h5 {
-	font-size: 20px;
+	font-size: 22px;
 }
 
 a {
@@ -38,6 +38,15 @@ a:hover {
 
 ul {
 	margin-left: -1rem;
+}
+
+li {
+	margin-top: .15em;
+	/* line-height: 1.5em; */
+}
+
+u {
+	text-decoration-color: darkgray;
 }
 
 pre {
@@ -70,6 +79,20 @@ table, th, td {
 
 textarea { display: none; }
 
+img {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.remark-slide {
+	display: inherit;
+	table-layout: inherit;
+}
+
+	.remark-slide>.center {
+		justify-content: center;
+	}
+
 .remark-slide-content {
 	/*background-color: #fff;
 	background-position: center;
@@ -79,7 +102,7 @@ textarea { display: none; }
 	padding: 1rem 4rem 1rem 4rem;
 }
 
-	.remark-slide-content.cover-page  h1 {
+	.remark-slide-content.cover-page h1 {
 		font-size: 5rem;
 	}
 
@@ -93,19 +116,46 @@ textarea { display: none; }
 	}
 
 	.remark-slide-content.long {
+		font-size: 17px;
+	}
+
+	.remark-slide-content.longer {
 		font-size: 16px;
 	}
 
+	.remark-slide-content.longest {
+		font-size: 14px;
+	}
+
 	.remark-slide-content h2 {
-		font-size: 44px;
+		font-size: 38px;
+	}
+
+	.remark-slide-content h3 {
+		font-size: 32px;
 	}
 
 .remark-code {
-	font-size: 15px;
-	line-height: 1.15;
+	font-size: 18px;
+	line-height: 1.25em;
 	box-shadow: inset 1px 1px 5px 1px rgba(128, 128, 128, .5);
 	background: #f9f9f9 !important;
 }
+
+	.long .remark-code {
+		font-size: 17px;
+		line-height: 1.15em;
+	}
+
+	.longer .remark-code {
+		font-size: 15px;
+		line-height: 1.1em;
+	}
+
+	.longest .remark-code {
+		font-size: 14px;
+		line-height: 1em;
+	}
 
 .remark-code, .remark-inline-code {
 	font-family: 'Fira Mono', monospace;
@@ -129,6 +179,10 @@ textarea { display: none; }
 	font-style: italic;
 }
 
+	.footnote ol {
+		padding-left: 1em;
+	}
+
 .inverse {
 	background: #272822;
 	color: #777872;
@@ -139,6 +193,10 @@ textarea { display: none; }
 .inverse h2 {
 	color: #f3f3f3;
 	line-height: 1.2em;
+}
+
+.new-book h2 {
+	color: green;
 }
 
 /* Export to PDF · Issue #50 · gnab/remark - https://goo.gl/WaosRl */

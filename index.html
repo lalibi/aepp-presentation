@@ -15,8 +15,8 @@
 		<!-- <script src="https://cdn.rawgit.com/webcomponents/webcomponentsjs/master/webcomponents.js"></script>
 		<script src="https://cdn.rawgit.com/timpler/jquery.initialize/master/jquery.initialize.js"></script> -->
 		<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.11.3/flowchart.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.12.2/flowchart.js"></script>
 		<script src="γλώσσα.js"></script>
 		<script>
 			$(function() {
@@ -30,23 +30,31 @@
 					highlightStyle: 'vs'
 				});
 
-				window.setTimeout(function() {
-					$('.remark-code.flowchart').each(function () {
-						var $this = $(this);
-						var html = $this.html();
-						console.log(html);
-						var code = html;
-						code = code.replace(/<\/div>/ig, '\n');
-						code = code.replace(/<\/?[^>]+>/ig, '');
-						code = code.replace(/&lt;/ig, '<');
-						code = code.replace(/&gt;/ig, '>');
-						console.log(code);
+				slideshow.on('showSlide', function (slide) {
+					setTimeout(() => {
+						$('.remark-visible .remark-code.flowchart:not(:has(>svg))').each(function () {
+							var $this = $(this);
+							var html = $this.html();
+							console.log(html);
+							var code = html;
+							code = code.replace(/<\/div>/ig, '\n');
+							code = code.replace(/<\/?[^>]+>/ig, '');
+							code = code.replace(/&lt;/ig, '<');
+							code = code.replace(/&gt;/ig, '>');
+							console.log(code);
 
-						var diagram = flowchart.parse(code);
-						$this.html('');
-						diagram.drawSVG($this.get(0));
-					});
-				}, 1000);
+							var diagram = flowchart.parse(code);
+							$this.html('');
+							diagram.drawSVG($this.get(0));
+							$this.hide();
+							setTimeout(() => {
+								$this.find('svg').attr('width', '100%');
+								$this.find('svg').attr('height', '98%');
+								$this.show();
+							}, 100);
+						})
+					}, 100);
+				});
 			});
 		</script>
 	</body>
