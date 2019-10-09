@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h2 {
-	margin: 1rem 0 1.5rem;
+	margin: 1rem 0 1.5rem !important;
 	border-bottom: 1px solid lightgray;
 }
 
@@ -56,15 +56,25 @@ pre {
 blockquote {
 	border-left: .5rem solid lightgray;
 	margin-left: 0rem;
+	margin-right: 0rem;
 	padding-left: 1rem;
 	text-align: justify;
 }
+
+	blockquote > *:first-child {
+		margin-top: 0;
+	}
+
+	blockquote > *:last-child {
+		margin-bottom: 0;
+	}
 
 	.no-justify blockquote {
 		text-align: inherit;
 	}
 
 table {
+	width: fit-content;
 	border-collapse: collapse;
 	text-align: center;
 }
@@ -79,11 +89,14 @@ table, th, td {
 
 textarea { display: none; }
 
+<<<<<<< HEAD
 img {
 	max-width: 100%;
 	margin: 0 auto;
 }
 
+=======
+>>>>>>> 30d8e10... [CHANGE] Use flexbox for slide layout
 .remark-slide {
 	display: inherit;
 	table-layout: inherit;
@@ -98,9 +111,25 @@ img {
 	background-position: center;
 	background-repeat: no-repeat;
 	display: table-cell;*/
+	display: flex;
+	flex-direction: column;
+	height: 96%;
+
 	font-size: 18px;
 	padding: 1rem 4rem 1rem 4rem;
 }
+
+	.remark-slide-content > * {
+		margin-top: 0;
+	}
+
+	.remark-slide-content > pre, .remark-slide-content > table {
+		margin-bottom: 1em;
+	}
+
+	.remark-slide-content > pre > code {
+		margin-top: 0;
+	}
 
 	.remark-slide-content.cover-page h1 {
 		font-size: 5rem;
@@ -135,6 +164,19 @@ img {
 		font-size: 32px;
 	}
 
+	.remark-slide-content pre {
+		display: flex;
+	}
+
+		.remark-slide-content pre > code {
+			flex-grow: 1;
+		}
+
+		.remark-slide-content pre:last-of-type {
+			overflow-y: auto;
+			margin-bottom: 2rem;
+		}
+
 .remark-code {
 	font-size: 18px;
 	line-height: 1.25em;
@@ -144,17 +186,14 @@ img {
 
 	.long .remark-code {
 		font-size: 17px;
-		line-height: 1.15em;
 	}
 
 	.longer .remark-code {
 		font-size: 15px;
-		line-height: 1.1em;
 	}
 
 	.longest .remark-code {
 		font-size: 14px;
-		line-height: 1em;
 	}
 
 .remark-code, .remark-inline-code {
