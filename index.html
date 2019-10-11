@@ -18,44 +18,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.12.2/flowchart.js"></script>
 		<script src="γλώσσα.js"></script>
-		<script>
-			$(function() {
-				remark.highlighter.engine.registerLanguage('γλώσσα', glossa)
-
-				var slideshow = remark.create({
-					sourceUrl: 'presentation.md',
-				//	ratio: '16:9',
-					highlightLanguage: 'γλώσσα',
-					highlightLines: true,
-					highlightStyle: 'vs'
-				});
-
-				slideshow.on('showSlide', function (slide) {
-					setTimeout(() => {
-						$('.remark-visible .remark-code.flowchart:not(:has(>svg))').each(function () {
-							var $this = $(this);
-							var html = $this.html();
-							console.log(html);
-							var code = html;
-							code = code.replace(/<\/div>/ig, '\n');
-							code = code.replace(/<\/?[^>]+>/ig, '');
-							code = code.replace(/&lt;/ig, '<');
-							code = code.replace(/&gt;/ig, '>');
-							console.log(code);
-
-							var diagram = flowchart.parse(code);
-							$this.html('');
-							diagram.drawSVG($this.get(0));
-							$this.hide();
-							setTimeout(() => {
-								$this.find('svg').attr('width', '100%');
-								$this.find('svg').attr('height', '98%');
-								$this.show();
-							}, 100);
-						})
-					}, 100);
-				});
-			});
-		</script>
+		<script src="script.js"></script>
 	</body>
 </html>
