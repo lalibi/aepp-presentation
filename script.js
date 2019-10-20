@@ -1,4 +1,6 @@
 $(function() {
+	'use scrict';
+
 	remark.highlighter.engine.registerLanguage('γλώσσα', glossa);
 
 	var slideshow = remark.create({
@@ -61,4 +63,20 @@ $(function() {
 			});
 		}, 100);
 	});
+
+	if ('serviceWorker' in navigator) {
+		console.log('CLIENT: service worker registration in progress.');
+		navigator.serviceWorker
+			.register('./service-worker.js')
+			.then(
+				function() {
+					console.log('CLIENT: service worker registration complete.');
+				},
+				function() {
+					console.log('CLIENT: service worker registration failure.');
+				}
+			);
+	} else {
+		console.log('CLIENT: service worker is not supported.');
+	}
 });
