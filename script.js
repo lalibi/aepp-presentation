@@ -11,6 +11,14 @@ $(function() {
 		highlightStyle: 'vs'
 	});
 
+	// Make all links to target to a new window
+	setTimeout(function() {
+		$('.remark-slides-area a').each(function() {
+			var $this = $(this);
+			$this.attr('target', '_blank');
+		});
+	}, 1000);
+
 	$(window).on('hashchange', function() {
 		if(window.location.hash) {
             var hash = window.location.hash;
