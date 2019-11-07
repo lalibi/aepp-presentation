@@ -124,7 +124,7 @@ img {
 		margin-bottom: 1em;
 	}
 
-	.remark-slide-content > pre > code {
+	.remark-slide-content pre > code {
 		margin-top: 0;
 	}
 
@@ -169,7 +169,7 @@ img {
 			flex-grow: 1;
 		}
 
-		.remark-slide-content pre:last-of-type {
+		.remark-slide-content > pre:last-of-type {
 			overflow-y: auto;
 			margin-bottom: 2rem;
 		}
@@ -196,7 +196,6 @@ img {
 .remark-code, .remark-inline-code {
 	font-family: 'Fira Mono', monospace;
 	border-radius: .25em;
-	margin-top: 1em;
 }
 
 .remark-inline-code {
@@ -234,6 +233,21 @@ img {
 .new-book h2 {
 	color: green;
 }
+
+.side-by-side {
+	display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+	.side-by-side > * {
+		flex-grow: 1;
+		height: 100%;
+	}
+
+	.side-by-side > *:not(:first-child) {
+		margin-left: 1em;
+	}
 
 /* Export to PDF · Issue #50 · gnab/remark - https://goo.gl/WaosRl */
 @page {
