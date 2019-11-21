@@ -50,19 +50,36 @@ $(function() {
 				$this.html('');
 				diagram.drawSVG($this.get(0));
 				$this.hide();
-				setTimeout(() => {
+				setTimeout(function() {
 					$this.find('svg').attr('width', '100%');
 					$this.find('svg').attr('height', '98%');
 					$this.show();
 				}, 100);
 			});
 
-			// Prevent scrolling on overflowing code elements
-			$('.remark-visible pre > code').each(function () {
+			$('.remark-visible .remark-code').each(function () {
 				var $this = $(this);
 				var el = $this[0];
+
+				var ratio = el.clientHeight / el.scrollHeight;
+
+				// Lower font-size on code elements that have a small overflow ratio
+				// so that the scrollbar will go away
+				if (ratio >= 0.8) {
+					var size = 1;
+					while (ratio < 1) {
+						size -= 0.01;
+						$this.css('font-size', size + 'em');
+
+						ratio = el.clientHeight / el.scrollHeight;
+						console.log(ratio);
+					}
+				}
+
+				// Prevent scrolling on overflowing code elements
 				var hasHorizontalScrollbar = el.scrollWidth > el.clientWidth;
 				var hasVerticalScrollbar = el.scrollHeight > el.clientHeight;
+
 				if (hasHorizontalScrollbar || hasVerticalScrollbar) {
 					$this.on('mousewheel', function(event) {
 						event.stopPropagation();
