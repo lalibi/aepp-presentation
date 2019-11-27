@@ -249,6 +249,10 @@ img {
 		margin-left: 1em;
 	}
 
+	.side-by-side + .side-by-side {
+		margin-top: 1em;
+	}
+
 /* Export to PDF · Issue #50 · gnab/remark - https://goo.gl/WaosRl */
 @page {
 	/* 16:9 */
