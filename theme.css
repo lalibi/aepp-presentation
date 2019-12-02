@@ -193,6 +193,31 @@ img {
 		font-size: 14px;
 	}
 
+	.remark-code .expand-icon {
+		position: absolute;
+		top: .25em;
+		right: .25em;
+		font-size: 1.5em;
+		cursor: pointer;
+	}
+
+		.remark-code .expand-icon::after {
+			content: '◹';
+		}
+
+		.remark-code.expanded .expand-icon::after {
+			content: '◺';
+		}
+
+	.remark-code.expanded {
+		position: absolute;
+		top: .5em;
+		right: .5em;
+		bottom: .5em;
+		left: .5em;
+		z-index: 999;
+	}
+
 .remark-code, .remark-inline-code {
 	font-family: 'Fira Mono', monospace;
 	border-radius: .25em;

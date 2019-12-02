@@ -74,6 +74,22 @@ $(function() {
 						ratio = el.clientHeight / el.scrollHeight;
 						console.log(ratio);
 					}
+				} else {
+					$this.css({position: 'relative'})
+					$icon = $('<span class="expand-icon"/>');
+					$this.append($icon);
+					$icon.on('click', function() {
+						var $this = $(this);
+						var $code = $this.closest('.remark-code');
+
+						if ($code.hasClass('expanded')) {
+							$code.removeClass('expanded');
+							$code.css({position: 'relative'});
+						} else {
+							$code.addClass('expanded');
+							$code.css({position: 'absolute'});
+						}
+					});
 				}
 
 				// Prevent scrolling on overflowing code elements
