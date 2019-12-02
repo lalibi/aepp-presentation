@@ -99,7 +99,7 @@ img {
 	table-layout: inherit;
 }
 
-	.remark-slide>.center {
+	.remark-slide  > .center {
 		justify-content: center;
 	}
 
