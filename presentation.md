@@ -1,4 +1,4 @@
-﻿class: cover-page, center, middle, inverse
+class: cover-page, center, middle, inverse
 
 ΠΛΗΡΟΦΟΡΙΚΗ
 ===========
@@ -7689,13 +7689,14 @@ name: 9.3
 
 ]
 
-.
-
 Τα δύο τμήματα αυτά κώδικα έχουν το ίδιο αποτέλεσμα;
 
 .footnote[
   Δες επίσης: [ΑΕΠΠ Παράρτημα Α, Οδηγίες Μελέτης Μαθητή (2η Έκδοση), §4.2, σελ.63](books/odigies-meletis-mathiti.pdf#page=64)
 ]
+
+???
+TODO: ΣΕ μία γραμμή ή στήλη
 
 ---
 layout: true
