@@ -33,6 +33,11 @@ var glossa = function(hljs) {
 		begin: '\\<[^ -=>]', end: '\\>',
 		contains: []
 	};
+	var SYMBOL = {
+		className: 'symbol',
+		begin: /\+|\-|\*|\/|\^|<|>|=|\[|\]|\(|\)|&/
+	};
+
 	var FUNCTION = {
 		className: 'function',
 		beginKeywords: 'function constructor destructor procedure', end: /[:;]/,
@@ -56,6 +61,7 @@ var glossa = function(hljs) {
 		contains: [
 			STRING,
 			SUBST,
+			SYMBOL,
 			hljs.NUMBER_MODE
 		].concat(COMMENT_MODES)
 	};

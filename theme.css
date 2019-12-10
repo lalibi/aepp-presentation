@@ -229,8 +229,6 @@ img {
 	white-space: pre;
 }
 
-.hljs-subst { color: black; }
-.hljs-number { color: #a31515; }
 
 .footnote {
 	position: absolute;
@@ -278,6 +276,11 @@ img {
 	.side-by-side + .side-by-side {
 		margin-top: 1em;
 	}
+
+
+/* .hljs-subst { color: black; }
+.hljs-number { color: #a31515; } */
+.hljs-symbol { color: #0090f6 !important; }
 
 /* Export to PDF · Issue #50 · gnab/remark - https://goo.gl/WaosRl */
 @page {
