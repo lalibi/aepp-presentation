@@ -278,8 +278,8 @@ img {
 	}
 
 
-/* .hljs-subst { color: black; }
-.hljs-number { color: #a31515; } */
+/* .hljs-subst { color: black; } */
+.hljs-number { color: #a31515; }
 .hljs-symbol { color: #0090f6 !important; }
 
 /* Export to PDF · Issue #50 · gnab/remark - https://goo.gl/WaosRl */
