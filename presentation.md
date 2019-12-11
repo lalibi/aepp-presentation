@@ -5139,6 +5139,12 @@ template: 2.4.5
 ```
 
 ---
+
+#### Παραδείγματα (Θέματα Πανελλαδικών)
+
+- [2019 / Θέμα Α5][themata_2019] ([Λύσεις][lyseis_2019])
+
+---
 layout: true
 name: 5.1-2
 class: new-book
@@ -7197,6 +7203,13 @@ i <- 1
 ```
 
 ---
+
+#### Παραδείγματα (Θέματα Πανελλαδικών)
+
+- [2019 / Θέμα Β1][themata_2019] ([Λύσεις][lyseis_2019])
+  - Παραλλαγή της σειριακής αναζήτησης (για 3 στοιχεία) / Συμπλήρωση κενών
+
+---
 layout: true
 template: 3.6
 name: binary-search
@@ -7372,6 +7385,15 @@ found <- ΨΕΥΔΗΣ
 ]
 
 ---
+
+### Παραδείγματα (Θέματα Πανελλαδικών)
+
+- [2016 (Παλαιό Σύστημα) / Θέμα Β1][themata_ps_2016]
+  - Πίνακας Τιμών / Δυαδική αναζήτηση
+- [2016 (Νέο Σύστημα) / Θέμα Α5][themata_ns_2016]
+  - Τι θα εμφανιστεί; / Δυαδική αναζήτηση
+
+---
 layout: true
 name: 3.7
 
@@ -7500,6 +7522,13 @@ i <- 2
 ]
 
 ---
+
+#### Παραδείγματα (Θέματα Πανελλαδικών)
+
+- [2018 / Θέμα Β1][themata_2018] ([Λύσεις][lyseis_2018])
+  - Παραλλαγή της ταξινόμησης φυσαλίδας / Συμπλήρωση κενών
+
+---
 layout: true
 template: 3.7
 
@@ -7581,6 +7610,7 @@ template: 3.7
 #### Παραδείγματα (Θέματα Πανελλαδικών)
 
 - [2014 / Θέμα 1ο - Β1][themata_2014] ([Λύσεις][lyseis_2014])
+  - Συμπλήρωση κενών
 
 ---
 layout: true
@@ -7851,7 +7881,7 @@ layout: true
 
 ---
 
-### Έξοδος Προγράμματος / "Τιμές που θα εμφανιστούν;"
+#### Έξοδος Προγράμματος / "Τιμές που θα εμφανιστούν;"
 
 - [2004 / Θέμα 2ο][themata_2004]
   - Τι θα εμφανιστεί;
@@ -7859,6 +7889,19 @@ layout: true
   - Πίνακας Τιμών / Δυαδική αναζήτηση
 - [2016 (Νέο Σύστημα) / Θέμα Α5][themata_ns_2016]
   - Τι θα εμφανιστεί; / Δυαδική αναζήτηση
+
+#### Συμπλήρωση Κενών
+
+- [2019 / Θέμα Β1][themata_2019] ([Λύσεις][lyseis_2019])
+  - Παραλλαγή της σειριακής αναζήτησης (για 3 στοιχεία)
+- [2018 / Θέμα Β1][themata_2018] ([Λύσεις][lyseis_2018])
+  - Παραλλαγή της ταξινόμησης φυσαλίδας
+- [2014 / Θέμα 1ο - Β1][themata_2014] ([Λύσεις][lyseis_2014])
+  - Ταξινόμηση με Επιλογή
+
+.footnote[
+  Κάποια από τα παραπάνω θέματα υπάρχουν και σε προηγούμενες διαφάνειες
+]
 
 ---
 layout: true
@@ -10031,62 +10074,62 @@ layout: true
 
 [themata_2005]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_no_0605.pdf
 
-[themata_epan_2005]: http://www.aepp.edu.gr/files/aepp_2005_imerisia_epanaliptikes.pdf
+[themata_epan_2005]: http://aepp.edu.gr/files/aepp_2005_imerisia_epanaliptikes.pdf
 
-[themata_2006]: http://www.aepp.edu.gr/files/aepp_2006_imerisia.pdf
+[themata_2006]: http://aepp.edu.gr/files/aepp_2006_imerisia.pdf
 
-[themata_epan_2006]: http://www.aepp.edu.gr/files/aepp_2006_imerisia_epanaliptikes.pdf
+[themata_epan_2006]: http://aepp.edu.gr/files/aepp_2006_imerisia_epanaliptikes.pdf
 
-[themata_2007]: http://www.aepp.edu.gr/files/aepp_2007_imerisia.pdf
+[themata_2007]: http://aepp.edu.gr/files/aepp_2007_imerisia.pdf
 
-[themata_epan_2007]: http://www.aepp.edu.gr/files/aepp_2007_imerisia_epanaliptikes.pdf
+[themata_epan_2007]: http://aepp.edu.gr/files/aepp_2007_imerisia_epanaliptikes.pdf
 
-[themata_2008]: http://www.aepp.edu.gr/files/aepp_2008_imerisia1.pdf
+[themata_2008]: http://aepp.edu.gr/files/aepp_2008_imerisia1.pdf
 
-[themata_epan_2008]: http://www.aepp.edu.gr/files/aepp_2008_imerisia_epanaliptikes.pdf
-[lyseis_epan_2008]:  http://www.aepp.edu.gr/files/lyseis_aepp_2008_epanaliptikes.pdf
+[themata_epan_2008]: http://aepp.edu.gr/files/aepp_2008_imerisia_epanaliptikes.pdf
+[lyseis_epan_2008]:  http://aepp.edu.gr/files/lyseis_aepp_2008_epanaliptikes.pdf
 
-[themata_2009]: http://www.aepp.edu.gr/files/aepp_2009_imerisia.pdf
-[lyseis_2009]:  http://www.aepp.edu.gr/files/lyseis_aepp_2009.pdf
+[themata_2009]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_no_0906.pdf
+[lyseis_2009]:  http://aepp.edu.gr/files/lyseis_aepp_2009.pdf
 
-[themata_epan_2009]: http://www.aepp.edu.gr/files/aepp_2009_imerisia_epanaliptikes.pdf
-[lyseis_epan_2009]:  http://www.aepp.edu.gr/files/lyseis_aepp_2009_epanaliptikes.pdf
+[themata_epan_2009]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_epan_0906.pdf
+[lyseis_epan_2009]:  http://aepp.edu.gr/files/lyseis_aepp_2009_epanaliptikes.pdf
 
-[themata_2010]: http://www.aepp.edu.gr/files/aepp_2010_imerisia.pdf
-[lyseis_2010]:  http://www.aepp.edu.gr/files/lyseis_aepp_2010.pdf
+[themata_2010]: http://aepp.edu.gr/files/aepp_2010_imerisia.pdf
+[lyseis_2010]:  http://aepp.edu.gr/files/lyseis_aepp_2010.pdf
 
-[themata_epan_2010]: http://www.aepp.edu.gr/files/aepp_2010_imerisia_epanaliptikes.pdf
-[lyseis_epan_2010]:  http://www.aepp.edu.gr/files/lyseis_aepp_2010_epanaliptikes.pdf
+[themata_epan_2010]: http://aepp.edu.gr/files/aepp_2010_imerisia_epanaliptikes.pdf
+[lyseis_epan_2010]:  http://aepp.edu.gr/files/lyseis_aepp_2010_epanaliptikes.pdf
 
-[themata_2011]: http://www.aepp.edu.gr/files/aepp_2011_imerisia.pdf
-[lyseis_2011]:  http://www.aepp.edu.gr/files/lyseis_aepp_2011.pdf
+[themata_2011]: http://aepp.edu.gr/files/aepp_2011_imerisia.pdf
+[lyseis_2011]:  http://aepp.edu.gr/files/lyseis_aepp_2011.pdf
 
-[themata_epan_2011]: http://www.aepp.edu.gr/files/aepp_2011_imerisia_epanaliptikes.pdf
-[lyseis_epan_2011]:  http://www.aepp.edu.gr/files/lyseis_aepp_2011_epanaliptikes.pdf
+[themata_epan_2011]: http://aepp.edu.gr/files/aepp_2011_imerisia_epanaliptikes.pdf
+[lyseis_epan_2011]:  http://aepp.edu.gr/files/lyseis_aepp_2011_epanaliptikes.pdf
 
-[themata_2012]: http://www.aepp.edu.gr/files/aepp_2012_imerisia.pdf
-[lyseis_2012]:  http://www.aepp.edu.gr/files/lyseis_aepp_2012.pdf
+[themata_2012]: http://aepp.edu.gr/files/aepp_2012_imerisia.pdf
+[lyseis_2012]:  http://aepp.edu.gr/files/lyseis_aepp_2012.pdf
 
-[themata_epan_2012]: http://www.aepp.edu.gr/files/aepp_2012_imerisia_epanaliptikes.pdf
-[lyseis_epan_2012]:  http://www.aepp.edu.gr/files/lyseis_aepp_2012_epanaliptikes.pdf
+[themata_epan_2012]: http://aepp.edu.gr/files/aepp_2012_imerisia_epanaliptikes.pdf
+[lyseis_epan_2012]:  http://aepp.edu.gr/files/lyseis_aepp_2012_epanaliptikes.pdf
 
-[themata_2013]: http://www.aepp.edu.gr/files/aepp_2013_imerisia.pdf
-[lyseis_2013]:  http://www.aepp.edu.gr/files/lyseis_aepp_2013.pdf
+[themata_2013]: http://aepp.edu.gr/files/aepp_2013_imerisia.pdf
+[lyseis_2013]:  http://aepp.edu.gr/files/lyseis_aepp_2013.pdf
 
-[themata_epan_2013]: http://www.aepp.edu.gr/files/aepp_2013_imerisia_epanaliptikes.pdf
-[lyseis_epan_2013]:  http://www.aepp.edu.gr/files/lyseis_aepp_2013_epanaliptikes.pdf
+[themata_epan_2013]: http://aepp.edu.gr/files/aepp_2013_imerisia_epanaliptikes.pdf
+[lyseis_epan_2013]:  http://aepp.edu.gr/files/lyseis_aepp_2013_epanaliptikes.pdf
 
-[themata_2014]: http://www.aepp.edu.gr/files/aepp_2014_imerisia.pdf
-[lyseis_2014]:  http://www.aepp.edu.gr/files/lyseis_aepp_2014.pdf
+[themata_2014]: http://aepp.edu.gr/files/aepp_2014_imerisia.pdf
+[lyseis_2014]:  http://aepp.edu.gr/files/lyseis_aepp_2014.pdf
 
-[themata_epan_2014]: http://www.aepp.edu.gr/files/aepp_2014_imerisia_epanaliptikes.pdf
-[lyseis_epan_2014]:  http://www.aepp.edu.gr/files/lyseis_aepp_2014_epanaliptikes.pdf
+[themata_epan_2014]: http://aepp.edu.gr/files/aepp_2014_imerisia_epanaliptikes.pdf
+[lyseis_epan_2014]:  http://aepp.edu.gr/files/lyseis_aepp_2014_epanaliptikes.pdf
 
-[themata_2015]: http://www.aepp.edu.gr/files/aepp_2015_imerisia.pdf
-[lyseis_2015]:  http://www.aepp.edu.gr/files/lyseis_aepp_2015.pdf
+[themata_2015]: http://aepp.edu.gr/files/aepp_2015_imerisia.pdf
+[lyseis_2015]:  http://aepp.edu.gr/files/lyseis_aepp_2015.pdf
 
-[themata_epan_2015]: http://www.aepp.edu.gr/files/aepp_2015_imerisia_epanaliptikes.pdf
-[lyseis_epan_2015]:  http://www.aepp.edu.gr/files/lyseis_aepp_2015_epanaliptikes.pdf
+[themata_epan_2015]: http://aepp.edu.gr/files/aepp_2015_imerisia_epanaliptikes.pdf
+[lyseis_epan_2015]:  http://aepp.edu.gr/files/lyseis_aepp_2015_epanaliptikes.pdf
 
 [themata_ps_2016]: http://sep4u.gr/thematape/them_plir_kat_c_hmer_os_160527.pdf
 [lyseis_ps_2016]:  https://aepp.edu.gr/files/lyseis_aepp_2016_palaio.pdf
@@ -10094,17 +10137,22 @@ layout: true
 [themata_ns_2016]: http://sep4u.gr/thematape/them_plir_kat_c_hmer_ns_160527.pdf
 [lyseis_ns_2016]:  https://aepp.edu.gr/files/lyseis_aepp_2016_neo.pdf
 
-[themata_epan_2016]: http://www.aepp.edu.gr/files/aepp_2016_imerisia_epanaliptikes.pdf
-[lyseis_epan_2016]:  http://www.aepp.edu.gr/files/lyseis_aepp_2016_epanaliptikes.pdf
+[themata_epan_2016]: http://aepp.edu.gr/files/aepp_2016_imerisia_epanaliptikes.pdf
+[lyseis_epan_2016]:  http://aepp.edu.gr/files/lyseis_aepp_2016_epanaliptikes.pdf
 
-[themata_2017]: http://www.aepp.edu.gr/files/aepp_2017_imerisia.pdf
-[lyseis_2017]:  http://www.aepp.edu.gr/files/lyseis_aepp_2017.pdf
+[themata_2017]: http://aepp.edu.gr/files/aepp_2017_imerisia.pdf
+[lyseis_2017]:  http://aepp.edu.gr/files/lyseis_aepp_2017.pdf
 
-[themata_epan_2017]: http://www.aepp.edu.gr/files/aepp_2017_imerisia_epanaliptikes.pdf
-[lyseis_epan_2017]:  http://www.aepp.edu.gr/files/lyseis_aepp_2017_epanaliptikes.pdf
+[themata_epan_2017]: http://aepp.edu.gr/files/aepp_2017_imerisia_epanaliptikes.pdf
+[lyseis_epan_2017]:  http://aepp.edu.gr/files/lyseis_aepp_2017_epanaliptikes.pdf
 
-[themata_2018]: http://www.aepp.edu.gr/files/aepp_2018_imerisia.pdf
-[lyseis_2018]:  http://www.aepp.edu.gr/files/lyseis_aepp_2018.pdf
+[themata_2018]: http://aepp.edu.gr/files/aepp_2018_imerisia.pdf
+[lyseis_2018]:  http://aepp.edu.gr/files/lyseis_aepp_2018.pdf
 
-[themata_epan_2018]: http://www.aepp.edu.gr/files/aepp_2018_imerisia_epanaliptikes.pdf
-[lyseis_epan_2018]:  http://www.aepp.edu.gr/files/lyseis_aepp_2018_epanaliptikes.pdf
+[themata_epan_2018]: http://aepp.edu.gr/files/aepp_2018_imerisia_epanaliptikes.pdf
+[lyseis_epan_2018]:  http://aepp.edu.gr/files/lyseis_aepp_2018_epanaliptikes.pdf
+
+[themata_2019]: http://aepp.edu.gr/files/aepp_2019_imerisia.pdf
+[lyseis_2019]:  http://aepp.edu.gr/files/lyseis_aepp_2019.pdf
+
+[themata_epan_2019]: https://aepp.edu.gr/files/aepp_2019_imerisia_epanaliptikes.pdf
