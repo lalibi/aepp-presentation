@@ -7518,7 +7518,7 @@ i <- 2
 ```
 
 .footnote[
-  [ΑΕΠΠ - Τετράδιο Μαθητή, §3.3, ΔΤ 2, σελ.33](books/tetradio.pdf#page=34)
+  [ΑΕΠΠ - Τετράδιο Μαθητή, §3.3, ΔΤ 2, σελ.31](books/tetradio.pdf#page=32)
 ]
 
 ---
@@ -9299,7 +9299,7 @@ layout: true
   - Ταξινομημένων <sup>1</sup>
 
 .footnote[
-  [ΑΕΠΠ Παράρτημα Α, Οδηγίες Μελέτης Μαθητή (2η Έκδοση), §4.3, σελ.70-78](books/odigies-meletis-mathiti.pdf#page=71)
+1. [ΑΕΠΠ Παράρτημα Α, Οδηγίες Μελέτης Μαθητή (2η Έκδοση), §4.3.3, σελ.77](books/odigies-meletis-mathiti.pdf#page=78)
 ]
 
 ---
