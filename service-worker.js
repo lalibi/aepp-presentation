@@ -14,18 +14,16 @@ var version = 'v1:20191221:';
    then the service worker won't be installed either.
 */
 var offlineFundamentals = [
-  '',
   './',
-  './#',
-  'script.js',
-  'theme.css',
-  'presentation.md',
-  'γλώσσα.js',
-  'favicon.ico',
-  'books/aepp.pdf',
-  'books/tetradio.pdf',
-  'books/odigies-meletis-mathiti.pdf',
-  'books/pliroforiki.pdf'
+  './script.js',
+  './theme.css',
+  './presentation.md',
+  './γλώσσα.js',
+  './favicon.ico',
+//'books/aepp.pdf',
+//'books/tetradio.pdf',
+//'books/odigies-meletis-mathiti.pdf',
+//'books/pliroforiki.pdf'
 ];
 
 /* The install event fires when the service worker is first installed.
