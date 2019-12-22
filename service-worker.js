@@ -7,7 +7,8 @@ console.log('WORKER: executing.');
 /* A version number is useful when updating the worker logic,
    allowing you to remove outdated cache entries during the update.
 */
-var version = 'v1:20191221:';
+var sha = '::SHA::';
+var version = sha.substr(0, 8) + '::';
 
 /* These resources will be downloaded and cached by the service worker
    during the installation process. If any resource fails to be downloaded,
@@ -20,10 +21,10 @@ var offlineFundamentals = [
   './presentation.md',
   './γλώσσα.js',
   './favicon.ico',
-//'books/aepp.pdf',
-//'books/tetradio.pdf',
-//'books/odigies-meletis-mathiti.pdf',
-//'books/pliroforiki.pdf'
+//'./books/aepp.pdf',
+//'./books/tetradio.pdf',
+//'./books/odigies-meletis-mathiti.pdf',
+//'./books/pliroforiki.pdf'
 ];
 
 /* The install event fires when the service worker is first installed.

@@ -1,0 +1,30 @@
+name: Update cache key
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout gh-pages
+      uses: actions/checkout@master
+      with:
+        ref: gh-pages
+    - name: Find and Replace
+      id: replace
+      uses: jacobtomlinson/gha-find-replace@master
+      with:
+        find: "sha = '[^']*'"
+        replace: "sha = '${{ github.sha }}'"
+    - name: Check outputs and modified files
+      run: |
+        test "${{ steps.replace.outputs.modifiedFiles }}" == "1"
+        grep "sha" service-worker.js
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git checkout gh-pages
+        git commit -m "[DEVOPS] Set CACHE_KEY" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
