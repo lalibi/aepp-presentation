@@ -1,13 +1,19 @@
 name: Update cache key
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - release
+  pull_request:
+    branches:
+      - release
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout gh-pages
+    - name: Checkout release
       uses: actions/checkout@master
       with:
-        ref: gh-pages
+        ref: release
     - name: Find and Replace
       id: replace
       uses: jacobtomlinson/gha-find-replace@master
@@ -22,9 +28,10 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git checkout gh-pages
+        git checkout release
         git commit -m "[DEVOPS] Set CACHE_KEY" -a
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
+        branch: release
         github_token: ${{ secrets.GITHUB_TOKEN }}
