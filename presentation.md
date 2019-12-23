@@ -1,4 +1,4 @@
-class: cover-page, center, middle, inverse
+﻿class: cover-page, center, middle, inverse
 
 ΠΛΗΡΟΦΟΡΙΚΗ
 ===========
@@ -9666,6 +9666,10 @@ layout: true
 
 ## 9.4 Τυπικές επεξεργασίες πινάκων
 
+.footnote[
+  [ΑΕΠΠ Παράρτημα Α, Οδηγίες Μελέτης Μαθητή (2η Έκδοση), §4.3, σελ.70](books/odigies-meletis-mathiti.pdf#page=71)
+]
+
 ---
 
 - **Υπολογισμός αθροισμάτων στοιχείων του πίνακα**
@@ -9691,10 +9695,6 @@ layout: true
 --
 - **Συγχώνευση δύο πινάκων**
   - Ταξινομημένων
-
-.footnote[
-  [ΑΕΠΠ Παράρτημα Α, Οδηγίες Μελέτης Μαθητή (2η Έκδοση), §4.3, σελ.70](books/odigies-meletis-mathiti.pdf#page=71)
-]
 
 ---
 layout: true
