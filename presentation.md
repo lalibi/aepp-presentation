@@ -1,4 +1,4 @@
-﻿class: cover-page, center, middle, inverse
+class: cover-page, center, middle, inverse
 
 ΠΛΗΡΟΦΟΡΙΚΗ
 ===========
@@ -32,6 +32,15 @@
 ✓           &#10003;
 ✗          &#10007;
 🛈          &#128712;
+
+---
+name: contents
+
+## Περιεχόμενα
+
+.contents[
+
+]
 
 ---
 layout: true

@@ -11,11 +11,41 @@ $(function() {
 		highlightStyle: 'vs'
 	});
 
-	// Make all links to target to a new window
 	setTimeout(function() {
+		// Make all links to target to a new window
 		$('.remark-slides-area a').each(function() {
 			var $this = $(this);
 			$this.attr('target', '_blank');
+		});
+
+		// Build contents list
+		$contents = $('.contents');
+		$list = $('<ul>');
+		$contents.append($list);
+		$contents.on('mousewheel', function(event) {
+			event.stopPropagation();
+		});
+
+		prevText = '';
+		$('h2[id]').each(function(index) {
+			if (index < 2) { return; }
+
+			$this = $(this);
+			id = $this.attr('id').replace(/\-/g, '.').substr(0, $this.attr('id').length - 1);
+			text = $this.text();
+
+			if (text == prevText) { return; }
+
+			$slide = $this.closest('.remark-slide-container');
+
+			$list.append('<li><a href="#" data-index="' + ($slide.index() + 1) + '">' + $this.text() + '</a></li>');
+
+			prevText = text;
+		});
+
+		$('a[data-index]').on('click', function(event) {
+			event.preventDefault();
+			slideshow.gotoSlide($(this).data('index'));
 		});
 	}, 1000);
 
