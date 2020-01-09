@@ -49,18 +49,6 @@ $(function() {
 		});
 	}, 1000);
 
-	$(window).on('hashchange', function() {
-		if(window.location.hash) {
-            var hash = window.location.hash;
-			var id = hash.substr(1).replace(/\./ig,'-') + '-';
-			var name = hash.substr(1);
-		//	console.log(id);
-		//	console.log(name);
-			var index = $('[id^="' + id +'"]').closest('.remark-slide-container').index() + 1;
-			slideshow.gotoSlide(index);
-    	}
-	});
-
 	slideshow.on('showSlide', function (slide) {
 		setTimeout(function() {
 			// Clear flowchart markup first
