@@ -21,21 +21,23 @@ $(function() {
 
 	slideshow.on('showSlide', function (slide) {
 		setTimeout(function() {
-			// Clear flowchart markup first
-			// Then draw flowchart
-			$('.remark-visible .remark-code.flowchart:not(:has(>svg))').each(function () {
+			$current_clide = $('.remark-visible');
+
+			// Draw flowchart from code
+			$current_clide.find('.remark-code.flowchart:not(:has(>svg))').each(function () {
 				var $this = $(this);
 				var html = $this.html();
-			//	console.log(html);
+
 				var code = html;
 				code = code.replace(/<\/div>/ig, '\n');
 				code = code.replace(/<\/?[^>]+>/ig, '');
 				code = code.replace(/&lt;/ig, '<');
 				code = code.replace(/&gt;/ig, '>');
-			//	console.log(code);
 
 				var diagram = flowchart.parse(code);
+				// Clear flowchart markup first
 				$this.html('');
+				// Then draw flowchart
 				diagram.drawSVG($this.get(0));
 				$this.hide();
 				setTimeout(function() {
@@ -45,13 +47,14 @@ $(function() {
 				}, 100);
 			});
 
-			$('.remark-visible .remark-code').each(function () {
+			// Manage code block with scrollbars
+			$current_clide.find('.remark-code').each(function () {
 				var $this = $(this);
 				var el = $this[0];
 
 				var ratio = el.clientHeight / el.scrollHeight;
 
-				// Lower font-size on code elements that have a small overflow ratio
+				// Lower font-size on code blocks that have a small overflow ratio
 				// so that the scrollbar will go away
 				if (ratio >= 0.8) {
 					var size = 1;
@@ -62,6 +65,8 @@ $(function() {
 						ratio = el.clientHeight / el.scrollHeight;
 						console.log(ratio);
 					}
+				// On code blocks tat have a larger overflow ratio
+				// add a full-screnn icon
 				} else {
 					$this.css({position: 'relative'})
 					$icon = $('<span class="expand-icon"/>');
