@@ -17,37 +17,7 @@ $(function() {
 			var $this = $(this);
 			$this.attr('target', '_blank');
 		});
-
-		// Build contents list
-		$contents = $('.contents');
-		$list = $('<ul>');
-		$contents.append($list);
-		$contents.on('mousewheel', function(event) {
-			event.stopPropagation();
-		});
-
-		prevText = '';
-		$('h2[id]').each(function(index) {
-			if (index < 2) { return; }
-
-			$this = $(this);
-			id = $this.attr('id').replace(/\-/g, '.').substr(0, $this.attr('id').length - 1);
-			text = $this.text();
-
-			if (text == prevText) { return; }
-
-			$slide = $this.closest('.remark-slide-container');
-
-			$list.append('<li><a href="#" data-index="' + ($slide.index() + 1) + '">' + $this.text() + '</a></li>');
-
-			prevText = text;
-		});
-
-		$('a[data-index]').on('click', function(event) {
-			event.preventDefault();
-			slideshow.gotoSlide($(this).data('index'));
-		});
-	}, 1000);
+	}, 100);
 
 	slideshow.on('showSlide', function (slide) {
 		setTimeout(function() {
@@ -120,6 +90,48 @@ $(function() {
 					});
 				}
 			});
+
+			var $contents_list = $current_clide.find('.contents');
+
+			// Build contents list
+			if ($contents_list.length === 1 && $contents_list.find('> ul').length === 0) {
+				var $list = $('<ul>');
+
+				$contents_list.append($list);
+				$contents_list.on('mousewheel', function(event) {
+					event.stopPropagation();
+				});
+
+				var chapters = [];
+
+				$('h2[id]').each(function(index) {
+					if (index < 2) { return; }
+
+					var $this = $(this);
+					var text = $this.text();
+
+					var match = $this.attr('id').match(/^(\d+)-(\d+)/);
+
+					if (!match) { return; }
+
+					var chapter = match[0];
+
+					if (chapters.indexOf(chapter) > -1) { return; }
+
+					chapters.push(chapter);
+
+					var $slide = $this.closest('.remark-slide-container');
+
+					$list.append('<li><a href="#" data-index="' + ($slide.index() + 1) + '">' + $this.text() + '</a></li>');
+				});
+
+				console.log($list);
+
+				$('a[data-index]').on('click', function(event) {
+					event.preventDefault();
+					slideshow.gotoSlide($(this).data('index'));
+				});
+			}
 		}, 100);
 	});
 
