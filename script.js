@@ -17,55 +17,27 @@ $(function() {
 			var $this = $(this);
 			$this.attr('target', '_blank');
 		});
-
-		// Build contents list
-		$contents = $('.contents');
-		$list = $('<ul>');
-		$contents.append($list);
-		$contents.on('mousewheel', function(event) {
-			event.stopPropagation();
-		});
-
-		prevText = '';
-		$('h2[id]').each(function(index) {
-			if (index < 2) { return; }
-
-			$this = $(this);
-			id = $this.attr('id').replace(/\-/g, '.').substr(0, $this.attr('id').length - 1);
-			text = $this.text();
-
-			if (text == prevText) { return; }
-
-			$slide = $this.closest('.remark-slide-container');
-
-			$list.append('<li><a href="#" data-index="' + ($slide.index() + 1) + '">' + $this.text() + '</a></li>');
-
-			prevText = text;
-		});
-
-		$('a[data-index]').on('click', function(event) {
-			event.preventDefault();
-			slideshow.gotoSlide($(this).data('index'));
-		});
-	}, 1000);
+	}, 100);
 
 	slideshow.on('showSlide', function (slide) {
 		setTimeout(function() {
-			// Clear flowchart markup first
-			// Then draw flowchart
-			$('.remark-visible .remark-code.flowchart:not(:has(>svg))').each(function () {
+			$current_clide = $('.remark-visible');
+
+			// Draw flowchart from code
+			$current_clide.find('.remark-code.flowchart:not(:has(>svg))').each(function () {
 				var $this = $(this);
 				var html = $this.html();
-			//	console.log(html);
+
 				var code = html;
 				code = code.replace(/<\/div>/ig, '\n');
 				code = code.replace(/<\/?[^>]+>/ig, '');
 				code = code.replace(/&lt;/ig, '<');
 				code = code.replace(/&gt;/ig, '>');
-			//	console.log(code);
 
 				var diagram = flowchart.parse(code);
+				// Clear flowchart markup first
 				$this.html('');
+				// Then draw flowchart
 				diagram.drawSVG($this.get(0));
 				$this.hide();
 				setTimeout(function() {
@@ -75,13 +47,14 @@ $(function() {
 				}, 100);
 			});
 
-			$('.remark-visible .remark-code').each(function () {
+			// Manage code block with scrollbars
+			$current_clide.find('.remark-code').each(function () {
 				var $this = $(this);
 				var el = $this[0];
 
 				var ratio = el.clientHeight / el.scrollHeight;
 
-				// Lower font-size on code elements that have a small overflow ratio
+				// Lower font-size on code blocks that have a small overflow ratio
 				// so that the scrollbar will go away
 				if (ratio >= 0.8) {
 					var size = 1;
@@ -92,6 +65,8 @@ $(function() {
 						ratio = el.clientHeight / el.scrollHeight;
 						console.log(ratio);
 					}
+				// On code blocks tat have a larger overflow ratio
+				// add a full-screnn icon
 				} else {
 					$this.css({position: 'relative'})
 					$icon = $('<span class="expand-icon"/>');
@@ -120,6 +95,48 @@ $(function() {
 					});
 				}
 			});
+
+			var $contents_list = $current_clide.find('.contents');
+
+			// Build contents list
+			if ($contents_list.length === 1 && $contents_list.find('> ul').length === 0) {
+				var $list = $('<ul>');
+
+				$contents_list.append($list);
+				$contents_list.on('mousewheel', function(event) {
+					event.stopPropagation();
+				});
+
+				var chapters = [];
+
+				$('h2[id]').each(function(index) {
+					if (index < 2) { return; }
+
+					var $this = $(this);
+					var text = $this.text();
+
+					var match = $this.attr('id').match(/^(\d+)-(\d+)/);
+
+					if (!match) { return; }
+
+					var chapter = match[0];
+
+					if (chapters.indexOf(chapter) > -1) { return; }
+
+					chapters.push(chapter);
+
+					var $slide = $this.closest('.remark-slide-container');
+
+					$list.append('<li><a href="#" data-index="' + ($slide.index() + 1) + '">' + $this.text() + '</a></li>');
+				});
+
+				console.log($list);
+
+				$('a[data-index]').on('click', function(event) {
+					event.preventDefault();
+					slideshow.gotoSlide($(this).data('index'));
+				});
+			}
 		}, 100);
 	});
 
