@@ -10307,7 +10307,7 @@ class: new-book
           ΓΡΑΨΕ 'Ουρά πλήρης (στο τέλος)'
         ΤΕΛΟΣ_ΑΝ
       ΠΕΡΙΠΤΩΣΗ 'ΕΞ'
-        ΑΝ front > 0 ΚΑΙ front <= rear ΤΟΤΕ
+        ΑΝ front <= rear ΤΟΤΕ
           ΓΡΑΨΕ 'Στοιχείο: ', Ουρά[front]
           front <- front + 1
         ΑΛΛΙΩΣ
@@ -10796,6 +10796,10 @@ layout: true
   - Συνάρτηση
 
 ---
+
+#### Εύρεσης Λαθών
+
+- [2019 / Θέμα Β2][themata_2019] ([Λύσεις][lyseis_2019])
 
 [themata_2001]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_no_0601.pdf
 
