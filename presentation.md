@@ -10797,6 +10797,10 @@ layout: true
 
 ---
 
+#### Εύρεσης Λαθών
+
+- [2019 / Θέμα Β2][themata_2019] ([Λύσεις][lyseis_2019])
+
 [themata_2001]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_no_0601.pdf
 
 [themata_epan_2001]: http://dide.ilei.sch.gr/keplinet/education/docs/them_plir_kat_c_hmer_epan_0601.pdf
