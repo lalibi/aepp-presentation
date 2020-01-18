@@ -65,7 +65,7 @@ $(function() {
 						ratio = el.clientHeight / el.scrollHeight;
 						console.log(ratio);
 					}
-				// On code blocks tat have a larger overflow ratio
+				// On code blocks that have a larger overflow ratio
 				// add a full-screnn icon
 				} else {
 					$this.css({position: 'relative'})
@@ -129,8 +129,6 @@ $(function() {
 
 					$list.append('<li><a href="#" data-index="' + ($slide.index() + 1) + '">' + $this.text() + '</a></li>');
 				});
-
-				console.log($list);
 
 				$('a[data-index]').on('click', function(event) {
 					event.preventDefault();
