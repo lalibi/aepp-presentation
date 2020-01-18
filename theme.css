@@ -49,6 +49,10 @@ u {
 	text-decoration-color: darkgray;
 }
 
+p {
+	text-align: justify;
+}
+
 pre {
 	margin: 0;
 }
