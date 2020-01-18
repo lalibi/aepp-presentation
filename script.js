@@ -109,8 +109,8 @@ $(function() {
 
 				var chapters = [];
 
-				$('h2[id]').each(function(index) {
-					if (index < 2) { return; }
+				$('.remark-slides-area h2[id]').each(function(index) {
+				//	if (index < 2) { return; }
 
 					var $this = $(this);
 					var text = $this.text();
@@ -121,7 +121,7 @@ $(function() {
 
 					var chapter = match[0];
 
-					if (chapters.indexOf(chapter) > -1) { return; }
+					if (chapters.length > 0 && chapters[chapters.length-1] === chapter) { return; }
 
 					chapters.push(chapter);
 
