@@ -67,8 +67,8 @@ $(function() {
 					}
 				// On code blocks that have a larger overflow ratio
 				// add a full-screnn icon
-				} else {
-					$this.css({position: 'relative'})
+				} else if ($this.find('.expand-icon').length === 0) {
+					$this.css({ position: 'relative' })
 					$icon = $('<span class="expand-icon"/>');
 					$this.append($icon);
 					$icon.on('click', function() {
