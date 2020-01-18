@@ -90,20 +90,20 @@ $(function() {
 				var hasVerticalScrollbar = el.scrollHeight > el.clientHeight;
 
 				if (hasHorizontalScrollbar || hasVerticalScrollbar) {
-					$this.on('mousewheel', function(event) {
+					$this.on('mousewheel touchstart touchend touchmove', function(event) {
 						event.stopPropagation();
 					});
 				}
 			});
 
+			// Build contents list
 			var $contents_list = $current_clide.find('.contents');
 
-			// Build contents list
 			if ($contents_list.length === 1 && $contents_list.find('> ul').length === 0) {
 				var $list = $('<ul>');
 
 				$contents_list.append($list);
-				$contents_list.on('mousewheel', function(event) {
+				$contents_list.on('mousewheel touchstart touchend touchmove', function(event) {
 					event.stopPropagation();
 				});
 
