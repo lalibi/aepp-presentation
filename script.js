@@ -65,10 +65,10 @@ $(function() {
 						ratio = el.clientHeight / el.scrollHeight;
 						console.log(ratio);
 					}
-				// On code blocks tat have a larger overflow ratio
+				// On code blocks that have a larger overflow ratio
 				// add a full-screnn icon
-				} else {
-					$this.css({position: 'relative'})
+				} else if ($this.find('.expand-icon').length === 0) {
+					$this.css({ position: 'relative' })
 					$icon = $('<span class="expand-icon"/>');
 					$this.append($icon);
 					$icon.on('click', function() {
@@ -90,27 +90,27 @@ $(function() {
 				var hasVerticalScrollbar = el.scrollHeight > el.clientHeight;
 
 				if (hasHorizontalScrollbar || hasVerticalScrollbar) {
-					$this.on('mousewheel', function(event) {
+					$this.on('mousewheel touchstart touchend touchmove', function(event) {
 						event.stopPropagation();
 					});
 				}
 			});
 
+			// Build contents list
 			var $contents_list = $current_clide.find('.contents');
 
-			// Build contents list
 			if ($contents_list.length === 1 && $contents_list.find('> ul').length === 0) {
 				var $list = $('<ul>');
 
 				$contents_list.append($list);
-				$contents_list.on('mousewheel', function(event) {
+				$contents_list.on('mousewheel touchstart touchend touchmove', function(event) {
 					event.stopPropagation();
 				});
 
 				var chapters = [];
 
-				$('h2[id]').each(function(index) {
-					if (index < 2) { return; }
+				$('.remark-slides-area h2[id]').each(function(index) {
+				//	if (index < 2) { return; }
 
 					var $this = $(this);
 					var text = $this.text();
@@ -121,7 +121,7 @@ $(function() {
 
 					var chapter = match[0];
 
-					if (chapters.indexOf(chapter) > -1) { return; }
+					if (chapters.length > 0 && chapters[chapters.length-1] === chapter) { return; }
 
 					chapters.push(chapter);
 
@@ -129,8 +129,6 @@ $(function() {
 
 					$list.append('<li><a href="#" data-index="' + ($slide.index() + 1) + '">' + $this.text() + '</a></li>');
 				});
-
-				console.log($list);
 
 				$('a[data-index]').on('click', function(event) {
 					event.preventDefault();
