@@ -290,6 +290,13 @@ img {
 		margin-top: 1em;
 	}
 
+.remark-slide-number {
+	cursor: pointer;
+}
+
+	.remark-slide-number:hover {
+		text-decoration: underline;
+	}
 
 /* .hljs-subst { color: black; } */
 .hljs-number { color: #a31515; }
