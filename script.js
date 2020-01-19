@@ -14,12 +14,9 @@ $(function() {
 	});
 
 	setTimeout(function() {
-		// Make all links to target to a new window
-		$('.remark-slides-area a').each(function() {
-			var $this = $(this);
-			$this.attr('target', '_blank');
-		});
-	}, 100);
+		makeSlideLinksToOpenToNewTab();
+		makeSlideNumbersLinkToContents(slideshow);
+	}, 1000);
 
 	slideshow.on('showSlide', function (slide) {
 		setTimeout(function() {
@@ -29,7 +26,6 @@ $(function() {
 
 			buildContentsList(slideshow, $current_slide);
 
-			makeSlideNumbersLinkToContents(slideshow);
 
 			manageLongCodeBlocks($current_slide);
 
@@ -39,6 +35,20 @@ $(function() {
 	registerServiceWorker();
 
 });
+
+function makeSlideLinksToOpenToNewTab() {
+	$('.remark-slides-area a').each(function () {
+		var $this = $(this);
+		$this.attr('target', '_blank');
+	});
+}
+
+function makeSlideNumbersLinkToContents(slideshow) {
+	$('.remark-slide-number').on('click', function (event) {
+		event.preventDefault();
+		slideshow.gotoSlide(2);
+	});
+}
 
 function drawFlowcharts($slide) {
 	$slide.find('.remark-code.flowchart:not(:has(>svg))').each(function () {
@@ -109,13 +119,6 @@ function buildContentsList(slideshow, $slide) {
 			event.stopPropagation();
 		});
 	}
-}
-
-function makeSlideNumbersLinkToContents(slideshow) {
-	$('.remark-slide-number').on('click', function (event) {
-		event.preventDefault();
-		slideshow.gotoSlide(2);
-	});
 }
 
 function manageLongCodeBlocks($slide) {
