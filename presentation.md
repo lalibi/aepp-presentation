@@ -1,4 +1,4 @@
-﻿class: cover-page, center, middle, inverse
+class: cover-page, center, middle, inverse
 
 ΠΛΗΡΟΦΟΡΙΚΗ
 ===========
@@ -12,6 +12,7 @@
 ± &plusmn;  &#177;
 … &hellip;  &#8230;
 ℹ           &#8505;
+← &larr;    &#8592;
 → &rarr;    &#8594;
 ↔ &harr;    &#8596;
 ⇎           &#8654;
@@ -32,6 +33,8 @@
 ✓           &#10003;
 ✗          &#10007;
 🛈          &#128712;
+📖
+💡
 
 ---
 name: contents
