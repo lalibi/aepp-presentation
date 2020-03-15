@@ -11022,6 +11022,10 @@ template: 1.3-2
 
 ---
 
+- ![](https://www.google.com/s2/favicons?domain=visualgo.net) [VisuAlgo - Linked List (Single, Doubly), Stack, Queue, Deque](https://visualgo.net/en/list)
+
+---
+
 > Στα πλεονεκτήματα των λιστών (έναντι των πινάκων) συγκαταλέγονται τα εξής:
 >
 > - Το δυναμικό τους μέγεθος,
