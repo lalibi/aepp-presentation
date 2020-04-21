@@ -181,6 +181,7 @@ img {
 .contents {
 	overflow-y: scroll;
 	margin-bottom: 2em;
+	text-size-adjust: none;
 }
 
 	.contents ul {
