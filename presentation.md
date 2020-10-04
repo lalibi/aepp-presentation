@@ -778,7 +778,18 @@ x DIV 1 → x       x MOD 1 → 0
 
 x DIV x → 1       x MOD x → 0
 
-x DIV y → 0       x MOD x → 0,    όταν x < y
+x DIV y → 0       x MOD y → y,    όταν x < y
+```
+
+---
+
+### `DIV` και `A_M()`
+
+```
+!Είναι ισοδύναμες οι δύο εκφράσεις;
+!Τι τύπου είναι οι μεταβλητές x & y, στην κάθε περίπτωση;
+
+x DIV y ≟ A_M(x/y)
 ```
 
 ---
@@ -8017,7 +8028,7 @@ i <- 1
       min <- Πίνακας[j]
       θέση <- j
     ΤΕΛΟΣ_ΑΝ
-    ΑΝ Πίνακας[j] < Πίνακας[j - 1] ΤΟΤΕ
+    ΑΝ Πίνακας[j] < Πίνακας[j-1] ΤΟΤΕ
       είναι_ταξινομημένος <- ΨΕΥΔΗΣ
     ΤΕΛΟΣ_ΑΝ
   ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ
@@ -8070,6 +8081,8 @@ template: 3.7
   ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ
 ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ
 ```
+
+Ο παραπάνω αλγόριθμος δεν είναι η καλύτερη εκδοχή της "Ταξινόμησης ευθείας εισαγωγής". Παρατίθεται σε αυτή τη μορφή μόνο για τη σύγκριση με τον αλγόριθμο της "Ταξινόμησης ευθείας ανταλλαγής (Φυσαλίδας)".
 
 ---
 
@@ -8124,17 +8137,17 @@ template: 3.7
 
 ```
 ΓΙΑ i ΑΠΟ 2 ΜΕΧΡΙ Ν
-  προσωρινή <- Πίνακας[i]
+  προσωρινή <- Πίνακας[i]                !Το στοιχείο προς τοποθέτηση
   stop <- ΨΕΥΔΗΣ
-  j <- i                                      !ΓΙΑ: ΑΠΟ i
+  j <- i                                 !ΓΙΑ: ΑΠΟ i
   ΑΡΧΗ_ΕΠΑΝΑΛΗΨΗΣ
-    ΑΝ Πίνακας[j - 1] > προσωρινή ΤΟΤΕ
-      Πίνακας[j] <- Πίνακας[j - 1]
-      j <- j - 1                              !ΓΙΑ: ΜΕ_ΒΗΜΑ -1
+    ΑΝ Πίνακας[j-1] > προσωρινή ΤΟΤΕ
+      Πίνακας[j] <- Πίνακας[j-1]         !Ολίσθηση προς τα δεξιά
+      j <- j - 1                         !ΓΙΑ: ΜΕ_ΒΗΜΑ -1
     ΑΛΛΙΩΣ
-      stop <- Αληθής
+      stop <- ΑΛΗΘΗΣ
     ΤΕΛΟΣ_ΑΝ
-  ΜΕΧΡΙΣ_ΟΤΟΥ j = 1 Ή stop                    !ΓΙΑ: ΜΕΧΡΙ 2 (⇔ j < 2)
+  ΜΕΧΡΙΣ_ΟΤΟΥ j = 1 Η stop               !ΓΙΑ: ΜΕΧΡΙ 2 (⇔ j < 2)
   ΑΝ j <> i ΤΟΤΕ
     Πίνακας[j] <- προσωρινή
   ΤΕΛΟΣ_ΑΝ
@@ -8277,12 +8290,13 @@ i <- 1
 
 ΑΝ θ <> 0 ΤΟΤΕ
   ΓΙΑ i ΑΠΟ Ν - 1 ΜΕΧΡΙ θ ΜΕ_ΒΗΜΑ -1      !Ολίσθηση προς τα δεξιά
-    Α[i + 1] <- Α[i]
+    Α[i+1] <- Α[i]
   ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ
 
   Α[θ] <- x
 ΑΛΛΙΩΣ
-  ΓΡΑΨΕ 'Το στοιχείο ', x, ' είναι μεγαλύτερο από όλα τα στοιχεία του πίνακα'
+  ΓΡΑΨΕ 'Το στοιχείο ', x, ' '
+  ΓΡΑΨΕ ' είναι μεγαλύτερο από όλα τα στοιχεία του πίνακα'
 ΤΕΛΟΣ_ΑΝ
 ```
 
@@ -8298,7 +8312,7 @@ stop <- ΨΕΥΔΗΣ
 ΟΣΟ i >= 1 ΚΑΙ ΟΧΙ stop ΕΠΑΝΑΛΑΒΕ
   ΑΝ Α[i] > x ΤΟΤΕ
     ΑΝ i < Ν ΤΟΤΕ                 !Αν δεν είναι το τελευταίο στοιχείο
-      Α[i + 1] <- Α[i]            !Μετακίνησέ το προς τα δεξιά
+      Α[i+1] <- Α[i]              !Μετακίνησέ το προς τα δεξιά
     ΤΕΛΟΣ_ΑΝ
     i <- i - 1
   ΑΛΛΙΩΣ
@@ -8307,7 +8321,7 @@ stop <- ΨΕΥΔΗΣ
 ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ
 
 ΑΝ i < Ν ΤΟΤΕ                     !Υπάρχει περίπτωση να
-  Α[i + 1] <- x                   ! μην μπει το στοιχείο στον πίνακα
+  Α[i+1] <- x                     ! μην μπει το στοιχείο στον πίνακα
 ΤΕΛΟΣ_ΑΝ
 ```
 
@@ -11509,21 +11523,21 @@ template: 1.3-2
   [ΠΛΗΡΟΦΟΡΙΚΗ - Βιβλίο Μαθητή - Συμπληρωματικό Εκπαιδευτικό Υλικό, §1.3.3, σελ.55](books/22-0260.pdf#page=56)
 ]
 
-[themata_2001]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_no_0601.pdf
+[themata_2001]: http://2lyk-gerak.att.sch.gr/aepp/them_plir_kat_c_hmer_no_0601.pdf
 
 [themata_epan_2001]: http://dide.ilei.sch.gr/keplinet/education/docs/them_plir_kat_c_hmer_epan_0601.pdf
 
-[themata_2002]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_no_0602.pdf
+[themata_2002]: http://2lyk-gerak.att.sch.gr/aepp/them_plir_kat_c_hmer_no_0602.pdf
 
-[themata_2003]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_no_0603.pdf
+[themata_2003]: http://2lyk-gerak.att.sch.gr/aepp/them_plir_kat_c_hmer_no_0603.pdf
 
-[themata_epan_2003]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_epan_0603.pdf
+[themata_epan_2003]: http://2lyk-gerak.att.sch.gr/aepp/them_plir_kat_c_hmer_epan_0603.pdf
 
-[themata_2004]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_no_0604.pdf
+[themata_2004]: http://2lyk-gerak.att.sch.gr/aepp/them_plir_kat_c_hmer_no_0604.pdf
 
-[themata_epan_2004]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_epan_0604.pdf
+[themata_epan_2004]: http://2lyk-gerak.att.sch.gr/aepp/them_plir_kat_c_hmer_epan_0604.pdf
 
-[themata_2005]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_no_0605.pdf
+[themata_2005]: http://2lyk-gerak.att.sch.gr/aepp/them_plir_kat_c_hmer_no_0605.pdf
 
 [themata_epan_2005]: http://aepp.edu.gr/files/aepp_2005_imerisia_epanaliptikes.pdf
 
@@ -11540,10 +11554,10 @@ template: 1.3-2
 [themata_epan_2008]: http://aepp.edu.gr/files/aepp_2008_imerisia_epanaliptikes.pdf
 [lyseis_epan_2008]:  http://aepp.edu.gr/files/lyseis_aepp_2008_epanaliptikes.pdf
 
-[themata_2009]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_no_0906.pdf
+[themata_2009]: http://2lyk-gerak.att.sch.gr/aepp/them_plir_kat_c_hmer_no_0906.pdf
 [lyseis_2009]:  http://aepp.edu.gr/files/lyseis_aepp_2009.pdf
 
-[themata_epan_2009]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_epan_0906.pdf
+[themata_epan_2009]: http://2lyk-gerak.att.sch.gr/aepp/them_plir_kat_c_hmer_epan_0906.pdf
 [lyseis_epan_2009]:  http://aepp.edu.gr/files/lyseis_aepp_2009_epanaliptikes.pdf
 
 [themata_2010]: http://aepp.edu.gr/files/aepp_2010_imerisia.pdf
