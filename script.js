@@ -93,7 +93,7 @@ function buildContentsList(slideshow, $slide) {
 		//	if (index < 2) { return; }
 			var $this = $(this);
 			var text = $this.text();
-			var match = $this.attr('id').match(/^(\d+)-(\d+)/);
+			var match = $this.attr('id').match(/^(\d+)-(\d+)(-(\d+))?/);
 			if (!match) {
 				return;
 			}
@@ -103,7 +103,7 @@ function buildContentsList(slideshow, $slide) {
 			}
 			chapters.push(chapter);
 			var $slide = $this.closest('.remark-slide-container');
-			$list.append('<li><a href="#" data-index="' + ($slide.index() + 1) + '">' + $this.text() + '</a></li>');
+			$list.append('<li><a href="#" data-index="' + ($slide.index() + 1) + '">' + text + '</a></li>');
 		});
 
 		$('a[data-index]').on('click', function (event) {
