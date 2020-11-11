@@ -1,4 +1,4 @@
-var scrollEventsList = 'mousewheel touchstart touchend touchmove';
+var scrollEventsList = 'mousewheel DOMMouseScroll touchstart touchend touchmove';
 
 $(function() {
 	'use scrict';
