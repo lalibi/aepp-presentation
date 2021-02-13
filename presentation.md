@@ -5102,6 +5102,8 @@ template: 2.4.5
 ΤΕΛΟΣ_ΠΡΟΓΡΑΜΜΑΤΟΣ
 ```
 
+![](https://www.google.com/s2/favicons?domain=photodentro.edu.gr) [Πολλαπλασιασμός αλά ρώσικα - Φωτόδεντρο - Προβολή αντικειμένου](http://photodentro.edu.gr/v/item/ds/8521/10582)
+
 ---
 
 #### Παραδείγματα (Θέματα Πανελλαδικών)
