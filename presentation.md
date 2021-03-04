@@ -11570,7 +11570,7 @@ template: 1.3-2
 
 [themata_epan_2004]: http://2lyk-gerak.att.sch.gr/aepp/them_plir_kat_c_hmer_epan_0604.pdf
 
-[themata_2005]: http://2lyk-gerak.att.sch.gr/aepp/them_plir_kat_c_hmer_no_0605.pdf
+[themata_2005]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_no_0605.pdf
 
 [themata_epan_2005]: http://aepp.edu.gr/files/aepp_2005_imerisia_epanaliptikes.pdf
 
@@ -11632,14 +11632,17 @@ template: 1.3-2
 [themata_epan_2015]: http://aepp.edu.gr/files/aepp_2015_imerisia_epanaliptikes.pdf
 [lyseis_epan_2015]:  http://aepp.edu.gr/files/lyseis_aepp_2015_epanaliptikes.pdf
 
-[themata_ps_2016]: http://sep4u.gr/thematape/them_plir_kat_c_hmer_os_160527.pdf
+[themata_ps_2016]: https://www.minedu.gov.gr/publications/docs2016/EXETASEIS-2016/them_plir_kat_c_hmer_os_160527.pdf
 [lyseis_ps_2016]:  https://aepp.edu.gr/files/lyseis_aepp_2016_palaio.pdf
 
-[themata_ns_2016]: http://sep4u.gr/thematape/them_plir_kat_c_hmer_ns_160527.pdf
+[themata_ns_2016]: https://www.minedu.gov.gr/publications/docs2016/EXETASEIS-2016/them_plir_op_c_hmer_ns_160527.pdf
 [lyseis_ns_2016]:  https://aepp.edu.gr/files/lyseis_aepp_2016_neo.pdf
 
-[themata_epan_2016]: http://aepp.edu.gr/files/aepp_2016_imerisia_epanaliptikes.pdf
-[lyseis_epan_2016]:  http://aepp.edu.gr/files/lyseis_aepp_2016_epanaliptikes.pdf
+[themata_epan_ps_2016]: https://aepp.edu.gr/files/aepp_2016_imerisia_palaio_epanaliptikes.pdf
+[lyseis_epan_ps_2016]:  https://aepp.edu.gr/files/lyseis_aepp_2016_imerisia_palaio_epanaliptikes.pdf
+
+[themata_epan_ns_2016]: https://aepp.edu.gr/files/aepp_2016_imerisia_neo_epanaliptikes.pdf
+[lyseis_epan_ns_2016]:  https://aepp.edu.gr/files/lyseis_aepp_2016_imerisia_neo_epanaliptikes.pdf
 
 [themata_2017]: http://aepp.edu.gr/files/aepp_2017_imerisia.pdf
 [lyseis_2017]:  http://aepp.edu.gr/files/lyseis_aepp_2017.pdf
@@ -11657,3 +11660,5 @@ template: 1.3-2
 [lyseis_2019]:  http://aepp.edu.gr/files/lyseis_aepp_2019.pdf
 
 [themata_epan_2019]: https://aepp.edu.gr/files/aepp_2019_imerisia_epanaliptikes.pdf
+[lyseis_epan_2019]:  http://aepp.edu.gr/files/lyseis_aepp_2019_epanaliptikes.pdf
+
