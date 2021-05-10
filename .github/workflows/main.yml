@@ -20,6 +20,7 @@ jobs:
       with:
         find: "sha = '[^']*'"
         replace: "sha = '${{ github.sha }}'"
+        exclude: ".git"
     - name: Check outputs and modified files
       run: |
         test "${{ steps.replace.outputs.modifiedFiles }}" == "1"
