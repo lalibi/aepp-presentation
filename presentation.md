@@ -1005,9 +1005,13 @@ y <- 2^x   !Το y πρέπει να δηλωθεί στις πραγματικ�
   - Αριθμητική έκφραση σε ΓΛΩΣΣΑ
 - [2008 επαν. / Θέμα 1ο - Δ][themata_epan_2008] ([Λύσεις][lyseis_epan_2008])
   - Αριθμητική έκφραση σε ΓΛΩΣΣΑ
-- [2015 επάν. / Θέμα Α - Α5][themata_epan_2015] ([Λύσεις][lyseis_epan_2015])
+- [2015 επαν. / Θέμα Α5][themata_epan_2015] ([Λύσεις][lyseis_epan_2015])
   - Αριθμητική έκφραση σε ΓΛΩΣΣΑ
   - Περιττές παρενθέσεις
+- [2018 επαν. / Θέμα Α2][themata_epan_2018] ([Λύσεις][lyseis_epan_2018])
+  - Αριθμητική έκφραση σε ΓΛΩΣΣΑ
+- [2020 επαν. (Νέο Σύστημα) / Θέμα Α5][themata_epan_ns_2020]
+  - Αριθμητική έκφραση σε ΓΛΩΣΣΑ
 
 ---
 layout: true
@@ -7691,7 +7695,7 @@ i <- 1
 
 #### Παραδείγματα (Θέματα Πανελλαδικών)
 
-##### Συμπλήρωσης κενών
+##### Συμπλήρωση κενών
 
 - [2011 επάν. / Θέμα Α5][themata_epan_2011] ([Λύσεις][lyseis_epan_2011])
   - Αναζήτηση με πολλαπλές εμφανίσεις, σε ταξινομημένο πίνακα
@@ -7700,6 +7704,11 @@ i <- 1
   - Δύσκολο!
 - [2019 / Θέμα Β1][themata_2019] ([Λύσεις][lyseis_2019])
   - Αναζήτηση για 3 στοιχεία
+
+##### Συμπλήρωση πίνακα
+
+- [2017 επάν. / Θέμα Β2][themata_epan_2017] ([Λύσεις][lyseis_epan_2017])
+  - Αναζήτηση σε ταξινομημένο πίνακα
 
 ---
 layout: true
@@ -11796,3 +11805,13 @@ template: 1.3-2
 
 [themata_epan_2019]: https://aepp.edu.gr/files/aepp_2019_imerisia_epanaliptikes.pdf
 [lyseis_epan_2019]:  http://aepp.edu.gr/files/lyseis_aepp_2019_epanaliptikes.pdf
+
+[themata_ps_2020]: https://aepp.edu.gr/files/aepp_2020_imerisia_palaio.pdf
+[lyseis_ps_2020]:  https://aepp.edu.gr/files/lyseis_aepp_2020_palaio.pdf
+
+[themata_ns_2020]: https://aepp.edu.gr/files/pliroforiki_2020_imerisia_esperina.pdf
+[lyseis_ns_2020]:  https://aepp.edu.gr/files/lyseis_pliroforiki_2020_imerisia_esperina_neo.pdf
+
+[themata_epan_ps_2020]: https://aepp.edu.gr/files/aepp_2020_imerisia_esperina_palaio_epanaliptikes.pdf
+
+[themata_epan_ns_2020]: https://aepp.edu.gr/files/pliroforiki_2020_imerisia_esperina_epanaliptikes.pdf
