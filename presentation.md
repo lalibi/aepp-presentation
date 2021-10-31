@@ -1312,6 +1312,221 @@ class: long
 
 ---
 layout: true
+name: 8.1
+
+## 8.1 Εντολές Επιλογής
+
+---
+layout: true
+template: 8.1
+
+### Λογική Έκφραση
+
+---
+
+> Για τη σύνταξη μιας λογικής έκφρασης ή συνθήκης χρησιμοποιούνται σταθερές, μεταβλητές, αριθμητικές παραστάσεις, συγκριτικοί και λογικοί τελεστές, καθώς και παρενθέσεις. Στις λογικές εκφράσεις γίνεται σύγκριση της τιμής μίας έκφρασης, που βρίσκεται αριστερά από το συγκριτικό τελεστή με την τιμή μιας άλλης έκφρασης που βρίσκεται δεξιά. Το αποτέλεσμα είναι μία <u>λογική τιμή `ΑΛΗΘΗΣ` ή `ΨΕΥΔΗΣ`</u> <sup>1</sup>.
+
+.footnote[
+  <sup>1</sup> Λογική τιμή ⇔ Λογική σταθερά
+
+  [ΑΕΠΠ - Βιβλίο Μαθητή, §8.1, σελ.139](books/22-0203.pdf#page=140)
+]
+
+---
+
+> - Οι συγκρίσεις γίνονται σε δεδομένα αριθμητικά, αλφαριθμητικά και λογικά.
+> - Η σύγκριση μεταξύ δύο αριθμών γίνεται με προφανή τρόπο.
+>   - Στην περίπτωση των **πραγματικών** αριθμών θεωρούμε ότι οι αριθμοί μπορούν να έχουν άπειρο αριθμό ψηφίων.
+> - Η σύγκριση ατομικών **χαρακτήρων** στηρίζεται στην αλφαβητική σειρά, για παράδειγμα το 'α' θεωρείται μικρότερο από το 'β'.
+>   - Η σύγκριση αλφαριθμητικών δεδομένων βασίζεται στη σύγκριση χαρακτήρα προς χαρακτήρα σε κάθε θέση μέχρις ότου βρεθεί κάποια διαφορά, για παράδειγμα η λέξη 'κακός' θεωρείται μικρότερη από τη λέξη 'καλός' αφού το γράμμα κ προηγείται του γράμματος λ.
+> - Η σύγκριση **λογικών** έχει έννοια μόνο στην περίπτωση του ίσου `=` και του διάφορου `<>`, αφού οι τιμές που μπορούν να έχουν είναι `ΑΛΗΘΗΣ` και `ΨΕΥΔΗΣ`.
+
+.footnote[
+  [ΑΕΠΠ - Βιβλίο Μαθητή, §8.1, σελ.139](books/22-0203.pdf#page=140)
+]
+
+---
+layout: true
+template: 8.1
+
+### Συγκριτικοί τελεστές
+
+---
+
+| Τελεστής | Ελεγχόμενη σχέση | Μαθημ. σύμβολο  |
+|:--------:|:---------------- |:---------------:|
+| `=`      | Ισότητα          |                 |
+| `<>`     | Ανισότητα        | `≠`             |
+| `>`      | Μεγαλύτερο από   |                 |
+| `>=`     | Μεγαλύτερο ή ίσο | `≥`             |
+| `<`      | Μικρότερο        |                 |
+| `<=`     | Μικρότερο ή ίσο  | `≤`             |
+
+.footnote[
+  [ΑΕΠΠ - Βιβλίο Μαθητή, §8.1, σελ.139](books/22-0203.pdf#page=139)
+]
+
+--
+
+#### Προσοχή
+
+- Ποια άλλη χρήση έχει το `=`;
+- ~~`=<`~~ & ~~`=>`~~
+- `<-` & `<=`
+
+---
+
+> Όταν αριθμητικοί και συγκριτικοί τελεστές συνδυάζονται σε μια έκφραση, οι αριθμητικές πράξεις εκτελούνται πρώτες. Ακόμη, οι λογικοί τελεστές έχουν χαμηλότερη ιεραρχία από τους συγκριτικούς.
+
+.footnote[
+  [ΑΕΠΠ - Βιβλίο Μαθητή, §8.1, σελ.139](books/22-0203.pdf#page=140)
+]
+
+---
+
+#### Σύγκριση χαρακτήρων
+
+```
+'Α' < 'ΑΒ'
+
+'Χ' < 'Ψ'
+
+'ΓΙΑΝΗΣ' < 'ΓΙΑΝΝΗΣ'
+
+'Γ' < 'ΓΙΑΝΝΗΣ' < 'ΓΙΩΡΓΟΣ' < 'ΓΩΓΩ'
+
+'100' < '9'
+
+'1' < '10' < '100' < '11' < '2' < '20'
+```
+
+.footnote[
+  Σύμφωνα με τη λεξικογραφική διάταξη των χαρακτήρων. [Πίνακας ASCII](http://www.asciitable.com/)
+]
+
+---
+
+### Προσοχή
+
+```
+'ΑΛΗΘΗΣ' < 'ΨΕΥΔΗΣ' ⇒ ΑΛΗΘΗΣ
+
+ ΑΛΗΘΗΣ  <  ΨΕΥΔΗΣ  ⇒ ?       !Δεν ορίζεται
+```
+
+---
+
+#### Συγκριτικοί τελεστές σε εντολή εκχώρησης
+
+```
+ΔΙΑΒΑΣΕ α, β, γ
+ΜΟ <- (α + β + γ) / 3
+
+πέρασες <- (ΜΟ >= 9.5)
+ΓΡΑΨΕ 'Πέρασες την τάξη; ', πέρασες
+```
+
+---
+
+#### Παραδείγματα (Θέματα Πανελλαδικών) ***
+
+- [2012 / Θέμα Α2][themata_2012] ([Λύσεις][lyseis_2012])
+  - Συμπλήρωση
+
+---
+layout: true
+template: 8.1
+
+### Σύνθετες Εκφράσεις
+
+---
+
+> Σε πολλά προβλήματα οι επιλογές δεν αρκεί να γίνονται με απλές λογικές παραστάσεις όπως αυτές οι οποίες αναφέρθηκαν, αλλά χρειάζεται να συνδυαστούν μία ή περισσότερες λογικές παραστάσεις. Αυτό επιτυγχάνεται με τη χρήση των τριών βασικών λογικών τελεστών `ΟΧΙ`, `ΚΑΙ`, `Ή`.
+
+.footnote[
+  [ΑΕΠΠ - Βιβλίο Μαθητή, §8.1, σελ.140](books/22-0203.pdf#page=141)
+]
+
+---
+
+#### Παραδείγματα
+
+- `0 < Χ < 5`
+  - `0 < X ΚΑΙ Χ < 5` ⇔ `Χ > 0 ΚΑΙ Χ < 5`
+
+--
+- `Χ = 1 ή 2 ή 3`
+  - `Χ = 1 Η Χ = 2 Η Χ = 3`
+
+--
+- `X ∈ (-∞, 4]`
+  - `X <= 4` ⇔ `X < 4 Η X = 4`
+
+--
+- `X ∈ [1, 20]`
+  - `X >= 1 ΚΑΙ X <=20`
+
+--
+- `X ∈ (-∞, 0] ∪ (10, +∞)`
+  - `X <= 0 Η X > 10`
+
+--
+
+> Η ιεραρχία των λογικών τελεστών είναι μικρότερη των αριθμητικών.
+
+.footnote[
+  [ΑΕΠΠ - Βιβλίο Μαθητή, §8.1, σελ.140](books/22-0203.pdf#page=141)
+]
+
+---
+> Σε περίπτωση που υπάρχει παρένθεση στη λογική έκφραση, τότε εκτελούνται πρώτα οι πράξεις στην παρένθεση σύμφωνα με την παραπάνω ιεραρχία. Στη περίπτωση που σε μια έκφραση συνυπάρχουν περισσότερα από ένα είδη πράξεων, τότε η ιεραρχία των πράξεων είναι η εξής:
+>
+> 1. Αριθμητικοί τελεστές
+> 1. Συγκριτικοί τελεστές και
+> 1. Λογικοί τελεστές.
+
+…
+
+> Οι πράξεις σε μια λογική έκφραση εκτελούνται με την παρακάτω ιεραρχία:
+>
+> 1. ΟΧΙ
+> 1. ΚΑΙ
+> 1. Ή
+
+.footnote[
+  [ΑΕΠΠ Παράρτημα Α, Οδηγίες Μελέτης Μαθητή (2η Έκδοση), §1.5, σελ.14](books/22-0259.pdf#page=15)
+]
+
+---
+
+#### Λογική άρνηση / Συμπληρωματικές Εκφράσεις
+
+```
+ΟΧΙ(Α<>Β)          ⇔   Α=Β
+
+ΟΧΙ(Α>Β)           ⇔   Α<=Β
+
+ΟΧΙ(Χ>0 ΚΑΙ Υ>0)   ⇔   Χ<=0 Η Υ<=0
+
+ΟΧΙ(Α=1 Η Α=2)     ⇔   Α<>1 ΚΑΙ Α<>2
+```
+
+---
+
+#### Παραδείγματα (Θέματα Πανελλαδικών)
+
+- [2010 επαν. / Θέμα Α1][themata_epan_2010] ([Λύσεις][lyseis_epan_2010])
+  - Υπολογισμός λογικών εκφράσεων
+- [2014 / Θέμα Α2 & Α3][themata_2014] ([Λύσεις][lyseis_2014])
+  - Λογικοί τελεστές, συγκριτικοί τελεστές, εκφράσεις, λογικές σταθερές
+  - Εκτέλεση λογικών εκφράσεων
+- [2015 / Θέμα Α5 - α.][themata_2015] ([Λύσεις][lyseis_2015])
+  - Εντολές εκχώρησης
+  - Λογικές εκφράσεις
+
+
+---
+layout: true
 
 ## 2.4 Βασικές συνιστώσες/εντολές ενός αλγορίθμου
 
@@ -1553,7 +1768,7 @@ cond3(no, right)->op4->e
 
 - [2006 / Θέμα 2ο - 1][themata_2006]
   - Διάγραμμα Ροής σε Ψευδογλώσσα
-- [2015 επάν. / Θέμα Β1][themata_epan_2015] ([Λύσεις][lyseis_epan_2015])
+- [2015 επαν. / Θέμα Β1][themata_epan_2015] ([Λύσεις][lyseis_epan_2015])
   - Αλγόριθμος σε Διάγραμμα Ροής
 
 ---
@@ -1578,220 +1793,6 @@ cond3(no, right)->op4->e
 .footnote[
   [ΑΕΠΠ - Βιβλίο Μαθητή, §2.4.4, σελ.43](books/22-0203.pdf#page=43)
 ]
-
----
-layout: true
-name: 8.1
-
-## 8.1 Εντολές Επιλογής
-
----
-layout: true
-template: 8.1
-
-### Λογική Έκφραση
-
----
-
-> Για τη σύνταξη μιας λογικής έκφρασης ή συνθήκης χρησιμοποιούνται σταθερές, μεταβλητές, αριθμητικές παραστάσεις, συγκριτικοί και λογικοί τελεστές, καθώς και παρενθέσεις. Στις λογικές εκφράσεις γίνεται σύγκριση της τιμής μίας έκφρασης, που βρίσκεται αριστερά από το συγκριτικό τελεστή με την τιμή μιας άλλης έκφρασης που βρίσκεται δεξιά. Το αποτέλεσμα είναι μία <u>λογική τιμή `ΑΛΗΘΗΣ` ή `ΨΕΥΔΗΣ`</u> <sup>1</sup>.
-
-.footnote[
-  <sup>1</sup> Λογική τιμή ⇔ Λογική σταθερά
-
-  [ΑΕΠΠ - Βιβλίο Μαθητή, §8.1, σελ.139](books/22-0203.pdf#page=140)
-]
-
----
-
-> - Οι συγκρίσεις γίνονται σε δεδομένα αριθμητικά, αλφαριθμητικά και λογικά.
-> - Η σύγκριση μεταξύ δύο αριθμών γίνεται με προφανή τρόπο.
->   - Στην περίπτωση των **πραγματικών** αριθμών θεωρούμε ότι οι αριθμοί μπορούν να έχουν άπειρο αριθμό ψηφίων.
-> - Η σύγκριση ατομικών **χαρακτήρων** στηρίζεται στην αλφαβητική σειρά, για παράδειγμα το 'α' θεωρείται μικρότερο από το 'β'.
->   - Η σύγκριση αλφαριθμητικών δεδομένων βασίζεται στη σύγκριση χαρακτήρα προς χαρακτήρα σε κάθε θέση μέχρις ότου βρεθεί κάποια διαφορά, για παράδειγμα η λέξη 'κακός' θεωρείται μικρότερη από τη λέξη 'καλός' αφού το γράμμα κ προηγείται του γράμματος λ.
-> - Η σύγκριση **λογικών** έχει έννοια μόνο στην περίπτωση του ίσου `=` και του διάφορου `<>`, αφού οι τιμές που μπορούν να έχουν είναι `ΑΛΗΘΗΣ` και `ΨΕΥΔΗΣ`.
-
-.footnote[
-  [ΑΕΠΠ - Βιβλίο Μαθητή, §8.1, σελ.139](books/22-0203.pdf#page=140)
-]
-
----
-layout: true
-template: 8.1
-
-### Συγκριτικοί τελεστές
-
----
-
-| Τελεστής | Ελεγχόμενη σχέση | Μαθημ. σύμβολο  |
-|:--------:|:---------------- |:---------------:|
-| `=`      | Ισότητα          |                 |
-| `<>`     | Ανισότητα        | `≠`             |
-| `>`      | Μεγαλύτερο από   |                 |
-| `>=`     | Μεγαλύτερο ή ίσο | `≥`             |
-| `<`      | Μικρότερο        |                 |
-| `<=`     | Μικρότερο ή ίσο  | `≤`             |
-
-.footnote[
-  [ΑΕΠΠ - Βιβλίο Μαθητή, §8.1, σελ.139](books/22-0203.pdf#page=139)
-]
-
---
-
-#### Προσοχή
-
-- Ποια άλλη χρήση έχει το `=`;
-- ~~`=<`~~ & ~~`=>`~~
-- `<-` & `<=`
-
----
-
-> Όταν αριθμητικοί και συγκριτικοί τελεστές συνδυάζονται σε μια έκφραση, οι αριθμητικές πράξεις εκτελούνται πρώτες. Ακόμη, οι λογικοί τελεστές έχουν χαμηλότερη ιεραρχία από τους συγκριτικούς.
-
-.footnote[
-  [ΑΕΠΠ - Βιβλίο Μαθητή, §8.1, σελ.139](books/22-0203.pdf#page=140)
-]
-
----
-
-#### Σύγκριση χαρακτήρων
-
-```
-'Α' < 'ΑΒ'
-
-'Χ' < 'Ψ'
-
-'ΓΙΑΝΗΣ' < 'ΓΙΑΝΝΗΣ'
-
-'Γ' < 'ΓΙΑΝΝΗΣ' < 'ΓΙΩΡΓΟΣ' < 'ΓΩΓΩ'
-
-'100' < '9'
-
-'1' < '10' < '100' < '11' < '2' < '20'
-```
-
-.footnote[
-  Σύμφωνα με τη λεξικογραφική διάταξη των χαρακτήρων. [Πίνακας ASCII](http://www.asciitable.com/)
-]
-
----
-
-### Προσοχή
-
-```
-'ΑΛΗΘΗΣ' < 'ΨΕΥΔΗΣ' ⇒ ΑΛΗΘΗΣ
-
- ΑΛΗΘΗΣ  <  ΨΕΥΔΗΣ  ⇒ ?       !Δεν ορίζεται
-```
-
----
-
-#### Συγκριτικοί τελεστές σε εντολή εκχώρησης
-
-```
-ΔΙΑΒΑΣΕ α, β, γ
-ΜΟ <- (α + β + γ) / 3
-
-πέρασες <- (ΜΟ >= 9.5)
-ΓΡΑΨΕ 'Πέρασες την τάξη; ', πέρασες
-```
-
----
-
-#### Παραδείγματα (Θέματα Πανελλαδικών) ***
-
-- [2012 / Θέμα Α2][themata_2012] ([Λύσεις][lyseis_2012])
-  - Συμπλήρωση
-
----
-layout: true
-template: 8.1
-
-### Σύνθετες Εκφράσεις
-
----
-
-> Σε πολλά προβλήματα οι επιλογές δεν αρκεί να γίνονται με απλές λογικές παραστάσεις όπως αυτές οι οποίες αναφέρθηκαν, αλλά χρειάζεται να συνδυαστούν μία ή περισσότερες λογικές παραστάσεις. Αυτό επιτυγχάνεται με τη χρήση των τριών βασικών λογικών τελεστών `ΟΧΙ`, `ΚΑΙ`, `Ή`.
-
-.footnote[
-  [ΑΕΠΠ - Βιβλίο Μαθητή, §8.1, σελ.140](books/22-0203.pdf#page=141)
-]
-
----
-
-#### Παραδείγματα
-
-- `0 < Χ < 5`
-  - `0 < X ΚΑΙ Χ < 5` ⇔ `Χ > 0 ΚΑΙ Χ < 5`
-
---
-- `Χ = 1 ή 2 ή 3`
-  - `Χ = 1 Η Χ = 2 Η Χ = 3`
-
---
-- `X ∈ (-∞, 4]`
-  - `X <= 4` ⇔ `X < 4 Η X = 4`
-
---
-- `X ∈ [1, 20]`
-  - `X >= 1 ΚΑΙ X <=20`
-
---
-- `X ∈ (-∞, 0] ∪ (10, +∞)`
-  - `X <= 0 Η X > 10`
-
---
-
-> Η ιεραρχία των λογικών τελεστών είναι μικρότερη των αριθμητικών.
-
-.footnote[
-  [ΑΕΠΠ - Βιβλίο Μαθητή, §8.1, σελ.140](books/22-0203.pdf#page=141)
-]
-
----
-> Σε περίπτωση που υπάρχει παρένθεση στη λογική έκφραση, τότε εκτελούνται πρώτα οι πράξεις στην παρένθεση σύμφωνα με την παραπάνω ιεραρχία. Στη περίπτωση που σε μια έκφραση συνυπάρχουν περισσότερα από ένα είδη πράξεων, τότε η ιεραρχία των πράξεων είναι η εξής:
->
-> 1. Αριθμητικοί τελεστές
-> 1. Συγκριτικοί τελεστές και
-> 1. Λογικοί τελεστές.
-
-…
-
-> Οι πράξεις σε μια λογική έκφραση εκτελούνται με την παρακάτω ιεραρχία:
->
-> 1. ΟΧΙ
-> 1. ΚΑΙ
-> 1. Ή
-
-.footnote[
-  [ΑΕΠΠ Παράρτημα Α, Οδηγίες Μελέτης Μαθητή (2η Έκδοση), §1.5, σελ.14](books/22-0259.pdf#page=15)
-]
-
----
-
-#### Λογική άρνηση / Συμπληρωματικές Εκφράσεις
-
-```
-ΟΧΙ(Α<>Β)          ⇔   Α=Β
-
-ΟΧΙ(Α>Β)           ⇔   Α<=Β
-
-ΟΧΙ(Χ>0 ΚΑΙ Υ>0)   ⇔   Χ<=0 Η Υ<=0
-
-ΟΧΙ(Α=1 Η Α=2)     ⇔   Α<>1 ΚΑΙ Α<>2
-```
-
----
-
-#### Παραδείγματα (Θέματα Πανελλαδικών)
-
-- [2010 επάν. / Θέμα Α1][themata_epan_2010] ([Λύσεις][lyseis_epan_2010])
-  - Υπολογισμός λογικών εκφράσεων
-- [2014 / Θέμα Α2 & Α3][themata_2014] ([Λύσεις][lyseis_2014])
-  - Λογικοί τελεστές, συγκριτικοί τελεστές, εκφράσεις, λογικές σταθερές
-  - Εκτέλεση λογικών εκφράσεων
-- [2015 / Θέμα Α5 - α.][themata_2015] ([Λύσεις][lyseis_2015])
-  - Εντολές εκχώρησης
-  - Λογικές εκφράσεις
 
 ---
 layout: true
@@ -2389,13 +2390,13 @@ template: 8.1.1
 - Μετατροπή Σύνθετης `ΑΝ` σε Απλή
   - [2019 επαν. / Θέμα Α4][themata_epan_2019] ([Λύσεις][lyseis_epan_2019])
 - Περιττοί έλεγχοι σε Πολλαπλή Επιλογή
-  - [2006 επάν. / Θέμα 1ο - Β][themata_epan_2006]
+  - [2006 επαν. / Θέμα 1ο - Β][themata_epan_2006]
 - Μετατροπή Πολλαπλής Επιλογής σε Εμφωλευμένες και αντίστροφα
-  - [2009 επάν. / Θέμα 1ο - Γ][themata_epan_2009] ([Λύσεις][lyseis_epan_2009])
-  - [2011 επάν. / Θέμα Α2][themata_epan_2011] ([Λύσεις][lyseis_epan_2011])
+  - [2009 επαν. / Θέμα 1ο - Γ][themata_epan_2009] ([Λύσεις][lyseis_epan_2009])
+  - [2011 επαν. / Θέμα Α2][themata_epan_2011] ([Λύσεις][lyseis_epan_2011])
   - [2015 / Θέμα Α4 - β.][themata_2015] ([Λύσεις][lyseis_2015])
-  - [2015 επάν. / Θέμα Β2][themata_epan_2015] ([Λύσεις][lyseis_epan_2015])
-  - [2018 επάν. / Θέμα Β1][themata_epan_2018] ([Λύσεις][lyseis_epan_2018])
+  - [2015 επαν. / Θέμα Β2][themata_epan_2015] ([Λύσεις][lyseis_epan_2015])
+  - [2018 επαν. / Θέμα Β1][themata_epan_2018] ([Λύσεις][lyseis_epan_2018])
 - Μετατροπή Σύνθετης `ΑΝ` σε εκχώρηση & λογική έκφραση
   - [2011 / Θέμα Α4][themata_2011] ([Λύσεις][lyseis_2011])
 
@@ -2794,10 +2795,16 @@ class: longer
 
 #### Παραδείγματα (Θέματα Πανελλαδικών)
 
-- [2003 επάν. / 3ο][themata_epan_2003]
-  - Κατανάλωση νερού ανά µήνα
-- [2006 επάν. / 3ο][themata_epan_2006]
-  - Διάρκεια στάθμευσης σε πάρκινγκ (_χρειάζεται και επανάληψη_)
+- [2003 επαν. / 3ο][themata_epan_2003]
+  - Χρέωση κατανάλωσης νερού
+- [2004 εσπερ. / 4ο][themata_esper_2004]
+  - Αποδοχές υπαλλήλων (_χρειάζεται και επανάληψη_)
+- [2005 επαν. εσπερ. / 3ο][themata_epan_esper_2005]
+  - Προμήθεια αντιπροσώπων (_χρειάζεται και επανάληψη_)
+- [2006 επαν. / 3ο][themata_epan_2006]
+  - Χρέωση πάρκινγκ (_χρειάζεται και επανάληψη_)
+- [2006 επαν. εσπερ. / 3ο][themata_epan_esper_2006]
+  - Επιδότηση αγρότη
 
 ---
 layout: true
@@ -2867,8 +2874,8 @@ cond(no)->e
 
 #### Χαρακτηριστικά της εντολής
 
-> - Επειδή η <συνθήκη> βρίσκεται στην αρχή της εντολής, υπάρχει περίπτωση να «βγει» ΨΕΥΔΗΣ από την αρχή, οπότε και να μην εκτελεστούν καμία φορά οι εντολές της επανάληψης.
-> - Αν η <συνθήκη> δε «βγει» ΨΕΥΔΗΣ ποτέ, τότε οι εντολές της επανάληψης εκτελούνται συνεχώς και το πρόγραμμα δεν τελειώνει ποτέ. Τότε λέμε ότι έχουμε **ατέρμων βρόχο**.
+> - Επειδή η `<συνθήκη>` βρίσκεται στην αρχή της εντολής, υπάρχει περίπτωση να «βγει» `ΨΕΥΔΗΣ` από την αρχή, οπότε και να μην εκτελεστούν καμία φορά οι εντολές της επανάληψης.
+> - Αν η `<συνθήκη>` δε «βγει» `ΨΕΥΔΗΣ` ποτέ, τότε οι εντολές της επανάληψης εκτελούνται συνεχώς και το πρόγραμμα δεν τελειώνει ποτέ. Τότε λέμε ότι έχουμε **ατέρμων βρόχο**.
 
 .footnote[
   [ΑΕΠΠ Παράρτημα Α, Οδηγίες Μελέτης Μαθητή (2η Έκδοση), §3.1, σελ.39](books/22-0259.pdf#page=40)
@@ -3365,7 +3372,7 @@ max <- -1
   ΔΙΑΒΑΣΕ β
 ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ
 
-ΑΝ β > 0 ΤΟΤΕ
+ΑΝ max <> -1 ΤΟΤΕ
   ΓΡΑΨΕ min, max
 ΜΕΧΡΙΣ_ΟΤΟΥ
 ```
@@ -3392,7 +3399,7 @@ max <- β
   ΔΙΑΒΑΣΕ β
 ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ
 
-ΑΝ β > 0 ΤΟΤΕ
+ΑΝ min > 0 ΤΟΤΕ
   ΓΡΑΨΕ min, max
 ΜΕΧΡΙΣ_ΟΤΟΥ
 ```
@@ -5067,7 +5074,7 @@ template: loop-conversions
 - [2001 / Θέμα 1ο - Β][themata_2001]
 - [2001 επαν. / Θέμα 1ο - Δ.α][themata_epan_2001]
 - [2008 επαν. / Θέμα 1ο - Ε][themata_epan_2008] ([Λύσεις][lyseis_epan_2008])
-- [2011 επάν. / Θέμα Α3 (α)][themata_epan_2011] ([Λύσεις][lyseis_epan_2011])
+- [2011 επαν. / Θέμα Α3 (α)][themata_epan_2011] ([Λύσεις][lyseis_epan_2011])
 - [2015 / Θέμα Β1.β][themata_2015] ([Λύσεις][lyseis_2015])
 - [2017 / Θέμα Α4][themata_2017] ([Λύσεις][lyseis_2017])
 
@@ -5081,15 +5088,15 @@ template: 2.4.5
 - Αλγόριθμος → Διάγραμμα Ροής
   - [2006 / Θέμα 2ο - 2][themata_2006] (εμφωλευμένες `ΑΝ`)
   - [2008 / Θέμα 2ο - β.][themata_2008] (`ΟΣΟ`)
-  - [2010 επάν. / Θέμα Β1][themata_epan_2010] ([Λύσεις][lyseis_epan_2009]) (`ΑΝ` & `ΟΣΟ`)
-  - [2012 επάν. / Θέμα Β1][themata_epan_2012] ([Λύσεις][lyseis_epan_2012]) (εμφωλευμένες `ΓΙΑ`)
+  - [2010 επαν. / Θέμα Β1][themata_epan_2010] ([Λύσεις][lyseis_epan_2009]) (`ΑΝ` & `ΟΣΟ`)
+  - [2012 επαν. / Θέμα Β1][themata_epan_2012] ([Λύσεις][lyseis_epan_2012]) (εμφωλευμένες `ΓΙΑ`)
   - [2013 / Θέμα Β1][themata_2013] ([Λύσεις][lyseis_2013]) (`ΑΝ` & `ΟΣΟ`)
   - [2015 / Θέμα Β1.α][themata_2015] ([Λύσεις][lyseis_2015]) (`ΑΝ` & `ΜΕΧΡΙΣ_ΟΤΟΥ`)
 - Διάγραμμα Ροής → Αλγόριθμο
   - [2006 / Θέμα 2ο - 1.α][themata_2006] (`ΓΙΑ`)
   - [2011 / Θέμα Β1][themata_2011] ([Λύσεις][lyseis_2011]) (`ΟΣΟ` & `ΜΕΧΡΙΣ_ΟΤΟΥ`)
   - [2012 / Θέμα Β2][themata_2012] ([Λύσεις][lyseis_2012]) (`ΑΝ` & `ΜΕΧΡΙΣ_ΟΤΟΥ`)
-  - [2013 επάν. / Θέμα Β1][themata_epan_2013] ([Λύσεις][lyseis_epan_2013]) (`ΑΝ` & `ΟΣΟ` / `ΓΙΑ`)
+  - [2013 επαν. / Θέμα Β1][themata_epan_2013] ([Λύσεις][lyseis_epan_2013]) (`ΑΝ` & `ΟΣΟ` / `ΓΙΑ`)
   - [2014 / Θέμα Β2][themata_2014] ([Λύσεις][lyseis_2014]) (`ΟΣΟ` με παγίδα)
   - [2018 / Θέμα Β2][themata_2018] ([Λύσεις][lyseis_2018]) (`ΟΣΟ` / `ΜΕΧΡΙΣ_ΟΤΟΥ` όχι συνηθισμένη)
 
@@ -5558,7 +5565,7 @@ template: 5.2.1-2
 ---
 
 - [2015 / Θέμα Α5 - β.][themata_2015] ([Λύσεις][lyseis_2015])
-- [2012 επάν. / Θέμα Α3][themata_epan_2012] ([Λύσεις][lyseis_epan_2012])
+- [2012 επαν. / Θέμα Α3][themata_epan_2012] ([Λύσεις][lyseis_epan_2012])
 
 ---
 layout: true
@@ -5629,8 +5636,8 @@ layout: true
 #### Πίνακες τιμών
 
 - `ΟΣΟ`
-  - [2009 επάν. / Θέμα 2ο][themata_epan_2009] ([Λύσεις][lyseis_epan_2009])
-  - [2010 επάν. / Θέμα Β2][themata_epan_2010] ([Λύσεις][lyseis_epan_2010])
+  - [2009 επαν. / Θέμα 2ο][themata_epan_2009] ([Λύσεις][lyseis_epan_2009])
+  - [2010 επαν. / Θέμα Β2][themata_epan_2010] ([Λύσεις][lyseis_epan_2010])
 - `ΜΕΧΡΙΣ_ΟΤΟΥ`
   - [2010 / Θέμα Β][themata_2010] ([Λύσεις][lyseis_2010])
 
@@ -7697,9 +7704,9 @@ i <- 1
 
 ##### Συμπλήρωση κενών
 
-- [2011 επάν. / Θέμα Α5][themata_epan_2011] ([Λύσεις][lyseis_epan_2011])
+- [2011 επαν. / Θέμα Α5][themata_epan_2011] ([Λύσεις][lyseis_epan_2011])
   - Αναζήτηση με πολλαπλές εμφανίσεις, σε ταξινομημένο πίνακα
-- [2013 επάν. / Θέμα Α3][themata_epan_2013] ([Λύσεις][lyseis_epan_2013])
+- [2013 επαν. / Θέμα Α3][themata_epan_2013] ([Λύσεις][lyseis_epan_2013])
   - Αναζήτηση πίνακα μέσα σε πίνακα
   - Δύσκολο!
 - [2019 / Θέμα Β1][themata_2019] ([Λύσεις][lyseis_2019])
@@ -7707,7 +7714,7 @@ i <- 1
 
 ##### Συμπλήρωση πίνακα
 
-- [2017 επάν. / Θέμα Β2][themata_epan_2017] ([Λύσεις][lyseis_epan_2017])
+- [2017 επαν. / Θέμα Β2][themata_epan_2017] ([Λύσεις][lyseis_epan_2017])
   - Αναζήτηση σε ταξινομημένο πίνακα
 
 ---
@@ -10008,7 +10015,7 @@ max <- Π[1,2]
   - Άνω τριγωνικός
 - [2013 εσπερ. / Θέμα A4.α][themata_esper_2013] ([Λύσεις][lyseis_esper_2013])
   - Κύρια διαγώνιος
-- [2013 επάν. / Θέμα Β2][themata_epan_2013] ([Λύσεις][lyseis_epan_2013])
+- [2013 επαν. / Θέμα Β2][themata_epan_2013] ([Λύσεις][lyseis_epan_2013])
   - Άνω τριγωνικός
 
 ---
@@ -10316,7 +10323,7 @@ k <- 1
 
 ##### Παράλληλα, βάσει μιας στήλης / γραμμών μεταξύ τους
 
-- [2016 επάν. (Νέο Σύστημα) / Θέμα Δ][themata_epan_ns_2016]
+- [2016 επαν. (Νέο Σύστημα) / Θέμα Δ][themata_epan_ns_2016]
 - [2017 / Θέμα Γ][themata_2017]
 
 ---
@@ -11314,18 +11321,18 @@ layout: true
   - Συνάρτηση
 - [2006 / Θέμα 1ο - Γ][themata_2006]
   - Διαδικασία
-- [2006 επάν. / Θέμα 2ο][themata_epan_2006]
+- [2006 επαν. / Θέμα 2ο][themata_epan_2006]
   - Συνάρτηση & Διαδικασία
 - [2007 / Θέμα 2ο][themata_2007]
   - Συνάρτηση
 - [2011 / Θέμα Β2][themata_2011] ([Λύσεις][lyseis_2011])
   - Διαδικασία
-- [2019 επάν. / Θέμα Β2][themata_epan_2019] ([Λύσεις][lyseis_epan_2019])
+- [2019 επαν. / Θέμα Β2][themata_epan_2019] ([Λύσεις][lyseis_epan_2019])
   - Διαδικασία
 
 #### Πίνακες τιμών
 
-- [2014 επάν. / Θέμα Β1][themata_epan_2014] ([Λύσεις][lyseis_epan_2014])
+- [2014 επαν. / Θέμα Β1][themata_epan_2014] ([Λύσεις][lyseis_epan_2014])
   - Συνάρτηση
 
 ---
@@ -11700,118 +11707,97 @@ template: 1.3-2
   [ΠΛΗΡΟΦΟΡΙΚΗ - Βιβλίο Μαθητή - Συμπληρωματικό Εκπαιδευτικό Υλικό, §1.3.3, σελ.55](books/22-0260.pdf#page=56)
 ]
 
-[themata_2001]: http://2lyk-gerak.att.sch.gr/aepp/them_plir_kat_c_hmer_no_0601.pdf
-
+[themata_2001]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_no_0601.pdf
 [themata_epan_2001]: http://dide.ilei.sch.gr/keplinet/education/docs/them_plir_kat_c_hmer_epan_0601.pdf
 
-[themata_2002]: http://2lyk-gerak.att.sch.gr/aepp/them_plir_kat_c_hmer_no_0602.pdf
+[themata_2002]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_no_0602.pdf
 
-[themata_2003]: http://2lyk-gerak.att.sch.gr/aepp/them_plir_kat_c_hmer_no_0603.pdf
+[themata_2003]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_no_0603.pdf
+[themata_epan_2003]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_epan_0603.pdf
 
-[themata_epan_2003]: http://2lyk-gerak.att.sch.gr/aepp/them_plir_kat_c_hmer_epan_0603.pdf
-
-[themata_2004]: http://2lyk-gerak.att.sch.gr/aepp/them_plir_kat_c_hmer_no_0604.pdf
-
-[themata_epan_2004]: http://2lyk-gerak.att.sch.gr/aepp/them_plir_kat_c_hmer_epan_0604.pdf
+[themata_2004]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_no_0604.pdf
+[themata_epan_2004]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_epan_0604.pdf
+[themata_esper_2004]: http://apps1.minedu.gov.gr/themata/them_plir_kat_d_esp_no_0604.pdf
 
 [themata_2005]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_no_0605.pdf
+[themata_epan_2005]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_epan_0705.pdf
+[themata_epan_esper_2005]: http://apps1.minedu.gov.gr/themata/them_plir_kat_d_esp_epan_0705.pdf
 
-[themata_epan_2005]: http://aepp.edu.gr/files/aepp_2005_imerisia_epanaliptikes.pdf
+[themata_2006]: http://apps1.minedu.gov.gr/themata/them_plir_c_kat_hmer_no_060530.pdf
+[themata_epan_2006]: http://apps1.minedu.gov.gr/themata/them_plir_c_kat_hmer_epan_060706.pdf
+[themata_epan_esper_2006]: http://apps1.minedu.gov.gr/themata/them_plir_d_kat_esp_epan_060704.pdf
 
-[themata_2006]: http://aepp.edu.gr/files/aepp_2006_imerisia.pdf
+[themata_2007]: http://apps1.minedu.gov.gr/themata/them_plir_c_kat_hmer_no_070531.pdf
+[themata_epan_2007]: http://apps1.minedu.gov.gr/themata/them_plir_c_kat_hmer_epan_070704.pdf
 
-[themata_epan_2006]: http://aepp.edu.gr/files/aepp_2006_imerisia_epanaliptikes.pdf
-
-[themata_2007]: http://aepp.edu.gr/files/aepp_2007_imerisia.pdf
-
-[themata_epan_2007]: http://aepp.edu.gr/files/aepp_2007_imerisia_epanaliptikes.pdf
-
-[themata_2008]: http://aepp.edu.gr/files/aepp_2008_imerisia1.pdf
-
-[themata_epan_2008]: http://aepp.edu.gr/files/aepp_2008_imerisia_epanaliptikes.pdf
+[themata_2008]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_no_0806.pdf
+[themata_epan_2008]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_epan_0806.pdf
 [lyseis_epan_2008]:  http://aepp.edu.gr/files/lyseis_aepp_2008_epanaliptikes.pdf
 
-[themata_2009]: http://2lyk-gerak.att.sch.gr/aepp/them_plir_kat_c_hmer_no_0906.pdf
+[themata_2009]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_no_0906.pdf
 [lyseis_2009]:  http://aepp.edu.gr/files/lyseis_aepp_2009.pdf
-
-[themata_epan_2009]: http://2lyk-gerak.att.sch.gr/aepp/them_plir_kat_c_hmer_epan_0906.pdf
+[themata_epan_2009]: http://apps1.minedu.gov.gr/themata/them_plir_kat_c_hmer_epan_0906.pdf
 [lyseis_epan_2009]:  http://aepp.edu.gr/files/lyseis_aepp_2009_epanaliptikes.pdf
 
 [themata_2010]: http://aepp.edu.gr/files/aepp_2010_imerisia.pdf
 [lyseis_2010]:  http://aepp.edu.gr/files/lyseis_aepp_2010.pdf
-
 [themata_epan_2010]: http://aepp.edu.gr/files/aepp_2010_imerisia_epanaliptikes.pdf
 [lyseis_epan_2010]:  http://aepp.edu.gr/files/lyseis_aepp_2010_epanaliptikes.pdf
 
 [themata_2011]: http://aepp.edu.gr/files/aepp_2011_imerisia.pdf
 [lyseis_2011]:  http://aepp.edu.gr/files/lyseis_aepp_2011.pdf
-
 [themata_epan_2011]: http://aepp.edu.gr/files/aepp_2011_imerisia_epanaliptikes.pdf
 [lyseis_epan_2011]:  http://aepp.edu.gr/files/lyseis_aepp_2011_epanaliptikes.pdf
 
 [themata_2012]: http://aepp.edu.gr/files/aepp_2012_imerisia.pdf
 [lyseis_2012]:  http://aepp.edu.gr/files/lyseis_aepp_2012.pdf
-
 [themata_epan_2012]: http://aepp.edu.gr/files/aepp_2012_imerisia_epanaliptikes.pdf
 [lyseis_epan_2012]:  http://aepp.edu.gr/files/lyseis_aepp_2012_epanaliptikes.pdf
 
 [themata_2013]: http://aepp.edu.gr/files/aepp_2013_imerisia.pdf
 [lyseis_2013]:  http://aepp.edu.gr/files/lyseis_aepp_2013.pdf
-
 [themata_esper_2013]: http://aepp.edu.gr/files/aepp_2013_esperina.pdf
 [lyseis_esper_2013]:  http://aepp.edu.gr/files/lyseis_aepp_2013_esperina.pdf
-
 [themata_epan_2013]: http://aepp.edu.gr/files/aepp_2013_imerisia_epanaliptikes.pdf
 [lyseis_epan_2013]:  http://aepp.edu.gr/files/lyseis_aepp_2013_epanaliptikes.pdf
 
 [themata_2014]: http://aepp.edu.gr/files/aepp_2014_imerisia.pdf
 [lyseis_2014]:  http://aepp.edu.gr/files/lyseis_aepp_2014.pdf
-
 [themata_epan_2014]: http://aepp.edu.gr/files/aepp_2014_imerisia_epanaliptikes.pdf
 [lyseis_epan_2014]:  http://aepp.edu.gr/files/lyseis_aepp_2014_epanaliptikes.pdf
 
 [themata_2015]: http://aepp.edu.gr/files/aepp_2015_imerisia.pdf
 [lyseis_2015]:  http://aepp.edu.gr/files/lyseis_aepp_2015.pdf
-
 [themata_epan_2015]: http://aepp.edu.gr/files/aepp_2015_imerisia_epanaliptikes.pdf
 [lyseis_epan_2015]:  http://aepp.edu.gr/files/lyseis_aepp_2015_epanaliptikes.pdf
 
 [themata_ps_2016]: https://www.minedu.gov.gr/publications/docs2016/EXETASEIS-2016/them_plir_kat_c_hmer_os_160527.pdf
 [lyseis_ps_2016]:  https://aepp.edu.gr/files/lyseis_aepp_2016_palaio.pdf
-
 [themata_ns_2016]: https://www.minedu.gov.gr/publications/docs2016/EXETASEIS-2016/them_plir_op_c_hmer_ns_160527.pdf
 [lyseis_ns_2016]:  https://aepp.edu.gr/files/lyseis_aepp_2016_neo.pdf
-
 [themata_epan_ps_2016]: https://aepp.edu.gr/files/aepp_2016_imerisia_palaio_epanaliptikes.pdf
 [lyseis_epan_ps_2016]:  https://aepp.edu.gr/files/lyseis_aepp_2016_imerisia_palaio_epanaliptikes.pdf
-
 [themata_epan_ns_2016]: https://aepp.edu.gr/files/aepp_2016_imerisia_neo_epanaliptikes.pdf
 [lyseis_epan_ns_2016]:  https://aepp.edu.gr/files/lyseis_aepp_2016_imerisia_neo_epanaliptikes.pdf
 
 [themata_2017]: http://aepp.edu.gr/files/aepp_2017_imerisia.pdf
 [lyseis_2017]:  http://aepp.edu.gr/files/lyseis_aepp_2017.pdf
-
 [themata_epan_2017]: http://aepp.edu.gr/files/aepp_2017_imerisia_epanaliptikes.pdf
 [lyseis_epan_2017]:  http://aepp.edu.gr/files/lyseis_aepp_2017_epanaliptikes.pdf
 
 [themata_2018]: http://aepp.edu.gr/files/aepp_2018_imerisia.pdf
 [lyseis_2018]:  http://aepp.edu.gr/files/lyseis_aepp_2018.pdf
-
 [themata_epan_2018]: http://aepp.edu.gr/files/aepp_2018_imerisia_epanaliptikes.pdf
 [lyseis_epan_2018]:  http://aepp.edu.gr/files/lyseis_aepp_2018_epanaliptikes.pdf
 
 [themata_2019]: http://aepp.edu.gr/files/aepp_2019_imerisia.pdf
 [lyseis_2019]:  http://aepp.edu.gr/files/lyseis_aepp_2019.pdf
-
 [themata_epan_2019]: https://aepp.edu.gr/files/aepp_2019_imerisia_epanaliptikes.pdf
 [lyseis_epan_2019]:  http://aepp.edu.gr/files/lyseis_aepp_2019_epanaliptikes.pdf
 
 [themata_ps_2020]: https://aepp.edu.gr/files/aepp_2020_imerisia_palaio.pdf
 [lyseis_ps_2020]:  https://aepp.edu.gr/files/lyseis_aepp_2020_palaio.pdf
-
 [themata_ns_2020]: https://aepp.edu.gr/files/pliroforiki_2020_imerisia_esperina.pdf
 [lyseis_ns_2020]:  https://aepp.edu.gr/files/lyseis_pliroforiki_2020_imerisia_esperina_neo.pdf
-
 [themata_epan_ps_2020]: https://aepp.edu.gr/files/aepp_2020_imerisia_esperina_palaio_epanaliptikes.pdf
-
 [themata_epan_ns_2020]: https://aepp.edu.gr/files/pliroforiki_2020_imerisia_esperina_epanaliptikes.pdf
