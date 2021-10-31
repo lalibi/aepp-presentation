@@ -16,7 +16,7 @@ jobs:
         ref: master
     - name: Find and Replace
       id: replace
-      uses: jacobtomlinson/gha-find-replace@master
+      uses: jacobtomlinson/gha-find-replace@v1
       with:
         find: "sha = '[^']*'"
         replace: "sha = '${{ github.sha }}'"
