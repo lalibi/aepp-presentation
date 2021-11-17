@@ -2686,6 +2686,15 @@ template: switch-examples
 Ενότητα [§3.1.2](books/22-0260.pdf#page=82)
 
 ---
+
+#### Παραδείγματα (Θέματα Πανελλαδικών)
+
+- [2020 (Νέο Σύστημα) / Θέμα Β1][themata_ns_2020]
+  - `ΕΠΙΛΕΞΕ` ⇒ `ΑΝ`
+- [2021 / Θέμα Α4][themata_2021]
+  - `ΑΝ` ⇒ `ΕΠΙΛΕΞΕ`
+
+---
 layout: true
 template: 8.1
 
@@ -11801,3 +11810,6 @@ template: 1.3-2
 [lyseis_ns_2020]:  https://aepp.edu.gr/files/lyseis_pliroforiki_2020_imerisia_esperina_neo.pdf
 [themata_epan_ps_2020]: https://aepp.edu.gr/files/aepp_2020_imerisia_esperina_palaio_epanaliptikes.pdf
 [themata_epan_ns_2020]: https://aepp.edu.gr/files/pliroforiki_2020_imerisia_esperina_epanaliptikes.pdf
+
+[themata_2021]: http://2lyk-gerak.att.sch.gr/aepp/PLHROFORIKH_NEO_HM_2021_10.pdf
+[themata_epan_2021]: http://2lyk-gerak.att.sch.gr/aepp/PLHROFORIKH_EPANALHPTIKES_2021_17.pdf
