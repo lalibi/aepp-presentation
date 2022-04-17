@@ -7,7 +7,10 @@ git push --force-with-lease
 
 git checkout master
 git push --force-with-lease
-Sleep 5
-git pull
 
+Start-Sleep 5
+
+git pull
 git stash pop
+
+git checkout develop
