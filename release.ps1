@@ -1,6 +1,8 @@
-git stash -u
+git checkout master
+git pull
 
 git checkout develop
+git stash -u
 git flow release start (Get-Date -Format 'yyyy/MM/dd')
 git flow release finish (Get-Date -Format 'yyyy/MM/dd') -m (Get-Date -Format 'dddd, dd MMM yyyy')
 git push --force-with-lease
@@ -8,9 +10,5 @@ git push --force-with-lease
 git checkout master
 git push --force-with-lease
 
-Start-Sleep 5
-
-git pull
-git stash pop
-
 git checkout develop
+git stash pop
