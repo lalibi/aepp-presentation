@@ -3424,7 +3424,7 @@ max <- -1
 ```
 ΔΙΑΒΑΣΕ β
 
-!Αρχικοποίηση με πραγματική τιμή
+!Αρχικοποίηση με πραγματική/συγκεκριμένη τιμή
 min <- β
 max <- β
 ΟΣΟ β > 0 ΕΠΑΝΑΛΑΒΕ
@@ -4502,12 +4502,12 @@ max <- -1
 
 ##### Καλύτερη & χειρότερη βαθμολογία από Ν μαθητές
 
-Αρχικοποίηση με πραγματική τιμή
+Αρχικοποίηση με πραγματική/συγκεκριμένη τιμή
 
 --
 
 ```
-ΔΙΑΒΑΣΕ επί
+ΔΙΑΒΑΣΕ επίδ
 min <- επίδ
 max <- επίδ
 
@@ -4552,7 +4552,7 @@ max <- -1
 
 ##### Όνομα αθλητή που κέρδισε το αγώνισμα
 
-Αρχικοποίηση με πραγματική τιμή
+Αρχικοποίηση με πραγματική/συγκεκριμένη τιμή
 
 --
 
@@ -6205,7 +6205,7 @@ max <- -1
 
 ---
 
-Αρχικοποίηση με κανονικές τιμές
+Αρχικοποίηση με πραγματική/συγκεκριμένη τιμή
 
 --
 
@@ -6303,7 +6303,7 @@ max <- -1
 ---
 class: longer
 
-Αρχικοποίηση με κανονικές τιμές και εύρεση θέσης
+Αρχικοποίηση με πραγματική/συγκεκριμένη τιμή και εύρεση θέσης
 
 --
 
@@ -6424,7 +6424,7 @@ template: tables-operations
 
 ```
 max1 <- -1                         !Θα μπορούσε να γίνει αρχικοποίηση
-max2 <- -1                         ! με πραγματικές τιμές;
+max2 <- -1                         ! με πραγματικές/συγκεκριμένες τιμές;
 max3 <- -1
 
 ΓΙΑ i ΑΠΟ 1 ΜΕΧΡΙ Ν
@@ -7119,7 +7119,7 @@ template: parallel-arrays
 
 ```
 max1 <- -1                      !Θα μπορούσε να γίνει αρχικοποίηση
-max2 <- -1                      ! με πραγματικές τιμές;
+max2 <- -1                      ! με πραγματικές/συγκεκριμένες τιμές;
 max3 <- -1
 
 θ_max1 <- 0
@@ -7832,14 +7832,21 @@ i <- 1
   - Αναζήτηση με πολλαπλές εμφανίσεις, σε ταξινομημένο πίνακα
 - [2013 επαν. / Θέμα Α3][themata_epan_2013] ([Λύσεις][lyseis_epan_2013])
   - Αναζήτηση πίνακα μέσα σε πίνακα
-  - Δύσκολο!
+  - Εξαιρετικά Δύσκολο!
+- [2016 ομογ. / Θέμα Β1][thematα_omog_2016] ([Λύσεις][lyseis_omog_2016])
 - [2019 / Θέμα Β1][themata_2019] ([Λύσεις][lyseis_2019])
   - Αναζήτηση για 3 στοιχεία
+- [2021 επαν. / Θέμα Β2][themata_epan_2021]
+  - Αλγόριθμος αναζήτησης από το Παράρτημα Α'
 
 ##### Συμπλήρωση πίνακα
 
 - [2017 επαν. / Θέμα Β2][themata_epan_2017] ([Λύσεις][lyseis_epan_2017])
   - Αναζήτηση σε ταξινομημένο πίνακα
+
+##### Εύρεση λαθών
+
+- [2019 εσπερ. / Θέμα Β2][themata_esper_2019]
 
 ---
 layout: true
@@ -9722,6 +9729,7 @@ max <- πλ_20[1]
 ΓΙΑ i ΑΠΟ 2 ΜΕΧΡΙ 20    !Για κάθε μαθητή
   ΑΝ πλ_20[i] > max ΤΟΤΕ
     max <- πλ_20[i]
+    θ_max <- i
   ΤΕΛΟΣ_ΑΝ
 ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ
 ΓΡΑΨΕ ΟΝ[θ_max]
@@ -9797,7 +9805,7 @@ max <- Σ[1]
   ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ
 
   ΑΝ βρέθηκε ΤΟΤΕ
-    max <- ΣΚΟΡ[θέση_i,j]
+    max <- ΣΚΟΡ[θέση_i,1]
     θέση_j <- 1               !θέση/αριθμός παιχνιδιού
     ΓΙΑ j ΑΠΟ 2 ΜΕΧΡΙ 24      !Για κάθε παιχνίδι
       ΑΝ ΣΚΟΡ[θέση_i,j] > max ΤΟΤΕ
@@ -10109,6 +10117,8 @@ max <- Π[1,2]
   - Κύρια διαγώνιος
 - [2013 επαν. / Θέμα Β2][themata_epan_2013] ([Λύσεις][lyseis_epan_2013])
   - Άνω τριγωνικός
+- [2022 επαν. / Θέμα Β2][themata_epan_2022]
+  - Κάτω τριγωνικός
 
 ---
 layout: true
@@ -11450,6 +11460,8 @@ layout: true
 - [2007 / Θέμα 2ο][themata_2007]
   - Συνάρτηση → Διαδικασία
   - Διαδικασία → Κύριο Πρόγραμμα
+- [2022 επάν. / Α4][themata_epan_2022]
+  - Συνάρτηση → Διαδικασία
 
 ---
 layout: true
@@ -11896,6 +11908,8 @@ template: 1.3-2
 [lyseis_ps_2016]:  https://aepp.edu.gr/files/lyseis_aepp_2016_palaio.pdf
 [themata_ns_2016]: https://www.minedu.gov.gr/publications/docs2016/EXETASEIS-2016/them_plir_op_c_hmer_ns_160527.pdf
 [lyseis_ns_2016]:  https://aepp.edu.gr/files/lyseis_aepp_2016_neo.pdf
+[thematα_omog_2016]: https://drive.google.com/file/d/0Bx_ILDAH7qb3emJJX2diTTdSbWc/view
+[lyseis_omog_2016]: https://drive.google.com/file/d/0Bx_ILDAH7qb3UTRFdkgxajRHN00/view
 [themata_epan_ps_2016]: https://aepp.edu.gr/files/aepp_2016_imerisia_palaio_epanaliptikes.pdf
 [lyseis_epan_ps_2016]:  https://aepp.edu.gr/files/lyseis_aepp_2016_imerisia_palaio_epanaliptikes.pdf
 [themata_epan_ns_2016]: https://aepp.edu.gr/files/aepp_2016_imerisia_neo_epanaliptikes.pdf
@@ -11913,6 +11927,7 @@ template: 1.3-2
 
 [themata_2019]: https://aepp.edu.gr/files/aepp_2019_imerisia.pdf
 [lyseis_2019]:  https://aepp.edu.gr/files/lyseis_aepp_2019.pdf
+[themata_esper_2019]: https://apps1.minedu.gov.gr/themata/them_plir_op_d_esp_190612.pdf
 [themata_epan_2019]: https://aepp.edu.gr/files/aepp_2019_imerisia_epanaliptikes.pdf
 [lyseis_epan_2019]:  https://aepp.edu.gr/files/lyseis_aepp_2019_epanaliptikes.pdf
 
