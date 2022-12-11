@@ -7878,7 +7878,11 @@ name: binary-search
 - Τα προηγούμενα βήματα επαναλαμβάνονται μέχρι να βρούμε το ζητούμενο στοιχείο ή όταν το κάτω άκρο ξεπεράσει το άνω, οπότε και συμπεραίνουμε ότι το ζητούμενο στοιχείο δεν υπάρχει.
 - Η παραπάνω διεργασία στηρίζεται στο ότι ο πίνακας είναι ταξινομημένος κατ΄ αύξουσα σειρά.
 
-![](https://www.google.com/s2/favicons?domain=www.cs.usfca.edu) [Binary and Linear Search Visualization](https://www.cs.usfca.edu/~galles/visualization/Search.html)
+---
+
+- ![](https://www.google.com/s2/favicons?domain=www.cs.usfca.edu) [Binary and Linear Search Visualization](https://www.cs.usfca.edu/~galles/visualization/Search.html)
+- ![](https://www.google.com/s2/favicons?domain=dichchankinh.com) [Binary and Linear Search Visualization (simpler)](https://dichchankinh.com/~galles/visualization/Search.html)
+- ![](https://www.google.com/s2/favicons?domain=evripides.mysch.gr) [Δυαδική Αναζήτηση σε Ταξινομημένο Πίνακα](http://evripides.mysch.gr/dave/files/BinarySearch.html)
 
 ---
 
