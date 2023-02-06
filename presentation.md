@@ -5185,7 +5185,7 @@ template: loop-conversions
 - [2001 / Θέμα 1ο - Β][themata_2001]
 - [2001 επαν. / Θέμα 1ο - Δ.α][themata_epan_2001]
 - [2008 επαν. / Θέμα 1ο - Ε][themata_epan_2008] ([Λύσεις][lyseis_epan_2008])
-- [2011 επαν. / Θέμα Α3 (α)][themata_epan_2011] ([Λύσεις][lyseis_epan_2011])
+- [2011 επαν. / Θέμα Α3.α][themata_epan_2011] ([Λύσεις][lyseis_epan_2011])
 - [2015 / Θέμα Β1.β][themata_2015] ([Λύσεις][lyseis_2015])
 - [2017 / Θέμα Α4][themata_2017] ([Λύσεις][lyseis_2017])
 - [2022 / Θέμα Β2.β][themata_2022] ([Λύσεις][lyseis_2022])
@@ -5199,7 +5199,7 @@ template: 2.4.5
 
 - Αλγόριθμος → Διάγραμμα Ροής
   - [2006 / Θέμα 2ο - 1.α][themata_2006] (`ΓΙΑ` & `ΑΝ`)
-  - [2008 / Θέμα 2ο - β.][themata_2008] (`ΟΣΟ`)
+  - [2008 / Θέμα 2ο - α][themata_2008] (`ΟΣΟ`)
   - [2010 επαν. / Θέμα Β1][themata_epan_2010] ([Λύσεις][lyseis_epan_2009]) (`ΑΝ` & `ΟΣΟ`)
   - [2012 επαν. / Θέμα Β1][themata_epan_2012] ([Λύσεις][lyseis_epan_2012]) (εμφωλευμένες `ΓΙΑ`)
   - [2013 / Θέμα Β1][themata_2013] ([Λύσεις][lyseis_2013]) (`ΑΝ` & `ΟΣΟ`)
@@ -7833,7 +7833,7 @@ i <- 1
 - [2013 επαν. / Θέμα Α3][themata_epan_2013] ([Λύσεις][lyseis_epan_2013])
   - Αναζήτηση πίνακα μέσα σε πίνακα
   - Εξαιρετικά Δύσκολο!
-- [2016 ομογ. / Θέμα Β1][thematα_omog_2016] ([Λύσεις][lyseis_omog_2016])
+- [2016 ομογ. / Θέμα Β1][themata_omog_2016] ([Λύσεις][lyseis_omog_2016])
 - [2019 / Θέμα Β1][themata_2019] ([Λύσεις][lyseis_2019])
   - Αναζήτηση για 3 στοιχεία
 - [2021 επαν. / Θέμα Β2][themata_epan_2021]
@@ -10301,10 +10301,6 @@ k <- 1
 ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ
 ```
 
-.footnote[
-  Πέρα από την ταξινόμηση "ολικά", όλες οι επόμενες λειτουργίες είναι λίγο έως πολύ εξεζητημένες.
-]
-
 ---
 
 #### Ολικά ("επί τόπου" / σε αύξουσα σειρά)
@@ -10326,6 +10322,10 @@ k <- 1
   ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ
 ΤΕΛΟΣ_ΕΠΑΝΑΛΗΨΗΣ
 ```
+
+.footnote[
+  Αρκετά εξεζητημένη προσέγγιση.
+]
 
 ---
 
@@ -10791,6 +10791,13 @@ class: long
 Ενότητα [§1.1.2](books/22-0260.pdf#page=22)
 
 ---
+
+### Παραδείγματα (Θέματα Πανελλαδικών)
+
+- [2016 (Νέο Σύστημα) / Θέμα Α5][themata_epan_ns_2016] ([Λύσεις][lyseis_epan_ns_2016])
+- [2020 (Νέο Σύστημα) / Θέμα Α3.α][themata_ns_2020] ([Λύσεις][lyseis_ns_2020])
+
+---
 layout: true
 class: new-book
 
@@ -11068,6 +11075,7 @@ class: long
 
 ### Παραδείγματα (Θέματα Πανελλαδικών)
 
+- [2020 (Νέο Σύστημα) / Θέμα Α3.β][themata_ns_2020] ([Λύσεις][lyseis_ns_2020])
 - [2022 / Θέμα Β1][themata_2022] ([Λύσεις][lyseis_2022])
 
 ---
@@ -11928,7 +11936,7 @@ template: 1.3-2
 [lyseis_ps_2016]:  https://aepp.edu.gr/files/lyseis_aepp_2016_palaio.pdf
 [themata_ns_2016]: https://www.minedu.gov.gr/publications/docs2016/EXETASEIS-2016/them_plir_op_c_hmer_ns_160527.pdf
 [lyseis_ns_2016]:  https://aepp.edu.gr/files/lyseis_aepp_2016_neo.pdf
-[thematα_omog_2016]: https://drive.google.com/file/d/0Bx_ILDAH7qb3emJJX2diTTdSbWc/view
+[themata_omog_2016]: https://drive.google.com/file/d/0Bx_ILDAH7qb3emJJX2diTTdSbWc/view
 [lyseis_omog_2016]: https://drive.google.com/file/d/0Bx_ILDAH7qb3UTRFdkgxajRHN00/view
 [themata_epan_ps_2016]: https://aepp.edu.gr/files/aepp_2016_imerisia_palaio_epanaliptikes.pdf
 [lyseis_epan_ps_2016]:  https://aepp.edu.gr/files/lyseis_aepp_2016_imerisia_palaio_epanaliptikes.pdf
