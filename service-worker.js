@@ -7,7 +7,7 @@ console.log('WORKER: executing.');
 /* A version number is useful when updating the worker logic,
    allowing you to remove outdated cache entries during the update.
 */
-var sha = '527281f757203331787b8566844e215115511e7b';
+var sha = 'bd7fa2b5f6fa75e1d9363e7449319eaa746ef3af';
 var version = sha.substr(0, 8) + '::';
 
 /* These resources will be downloaded and cached by the service worker
