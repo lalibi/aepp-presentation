@@ -8,7 +8,7 @@ console.log('WORKER: executing.');
    allowing you to remove outdated cache entries during the update.
 */
 var sha = 'bd7fa2b5f6fa75e1d9363e7449319eaa746ef3af';
-var version = sha.substr(0, 8) + '::';
+var version = sha.slice(0, 8) + '::';
 
 /* These resources will be downloaded and cached by the service worker
    during the installation process. If any resource fails to be downloaded,
