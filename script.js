@@ -32,8 +32,7 @@ $(function() {
 		}, 100);
 	});
 
-	registerServiceWorker();
-
+	// registerServiceWorker();
 });
 
 function makeSlideLinksToOpenToNewTab() {
