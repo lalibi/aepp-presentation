@@ -10137,8 +10137,10 @@ max <- Π[1,2]
   - Κύρια διαγώνιος
 - [2013 επαν. / Θέμα Β2][themata_epan_2013] ([Λύσεις][lyseis_epan_2013])
   - Άνω τριγωνικός
-- [2022 επαν. / Θέμα Β2][themata_epan_2022]
+- [2022 επαν. / Θέμα Β2][themata_epan_2022] ([Λύσεις][lyseis_epan_2022])
   - Κάτω τριγωνικός
+- [2023 επαν. / Θέμα Β3][themata_epan_2023] ([Λύσεις][lyseis_epan_2023])
+  - Κύρια & Δευτερεύουσα διαγώνιος
 
 ---
 layout: true
@@ -10796,6 +10798,7 @@ class: long
 
 - [2016 (Νέο Σύστημα) / Θέμα Α5][themata_epan_ns_2016] ([Λύσεις][lyseis_epan_ns_2016])
 - [2020 (Νέο Σύστημα) / Θέμα Α3.α][themata_ns_2020] ([Λύσεις][lyseis_ns_2020])
+- [2023 επαν. / Θέμα Β2][themata_epan_2023] ([Λύσεις][lyseis_epan_2023])
 
 ---
 layout: true
@@ -11079,6 +11082,7 @@ class: long
 - [2020 επαν. (Νέο Σύστημα) / Θέμα Α4 & Β2][themata_epan_ns_2020]
 - [2021 / Θέμα Β2][themata_2021]
 - [2022 / Θέμα Β1][themata_2022] ([Λύσεις][lyseis_2022])
+- [2023 / Θέμα Β3][themata_2023] ([Λύσεις][lyseis_2023])
 
 ---
 layout: true
@@ -11824,6 +11828,8 @@ template: 1.3-2
 #### Παραδείγματα (Θέματα Πανελλαδικών)
 
 - [2022 / Θέμα Α2.β][themata_2022] ([Λύσεις][lyseis_2022])
+- [2023 / Θέμα Α2][themata_2022] ([Λύσεις][lyseis_2022])
+- [2023 επαν. / Θέμα Α2][themata_epan_2022] ([Λύσεις][lyseis_epan_2022])
 
 ---
 
@@ -11971,6 +11977,12 @@ template: 1.3-2
 [themata_2021]: https://apps1.minedu.gov.gr/themata/PLHROFORIKH_NEO_HM_2021_10.pdf
 [themata_epan_2021]: https://apps1.minedu.gov.gr/themata/ΑΝΑΠΤΥΞΗ_ΕΦΑΡΜΟΓΩΝ_ΕΠΑΝΑΛ_2021_17.pdf
 
-[themata_2022]: https://apps1.minedu.gov.gr/themata/ΠΛΗΡΟΦΟΡΙΚΗ_ΝΕΟ_ΗΜ_2022_1.pdf
+[themata_2022]: https://kathigitis-aepp.gr/wp-content/uploads/2022/06/themata-aepp-panellinies-2022.pdf
 [lyseis_2022]:  https://kathigitis-aepp.gr/wp-content/uploads/2022/06/liseis-aepp-panellinies-2022.pdf
-[themata_epan_2022]: https://www.alfavita.gr/sites/default/files/2022-09/them_pliroforiki_gel_220912.pdf
+[themata_epan_2022]: https://drive.google.com/file/d/1AKojPuN-Lh2803BcEFo0-96GMFT78Huh/view?usp=sharing
+[lyseis_epan_2022]: https://drive.google.com/file/d/1AVsQ3KqDFXU6iRg5e4E-YMjxbO_CM741/view?usp=sharing
+
+[themata_2023]: https://kathigitis-aepp.gr/wp-content/uploads/2023/06/themata-panelliniwn-aepp-2023.pdf
+[lyseis_2023]:  https://kathigitis-aepp.gr/wp-content/uploads/2023/06/liseis-panelliniwn-aepp-2023.pdf
+[themata_epan_2023]: https://drive.google.com/file/d/1eC1aWdlFdOBWEZYaru5QlLDbCUy5MjKm/view?usp=drive_link
+[lyseis_epan_2023]: https://drive.google.com/file/d/1dgKVgerNU7uxN_nFI_t4Dphp4nbu-DR-/view?usp=drive_link
