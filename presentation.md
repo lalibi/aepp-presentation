@@ -848,7 +848,7 @@ x DIV 1 → x       x MOD 1 → 0
 
 x DIV x → 1       x MOD x → 0
 
-x DIV y → 0       x MOD y → y,    όταν x < y
+x DIV y → 0       x MOD y → x,    όταν x < y
 ```
 
 ---
@@ -11977,12 +11977,12 @@ template: 1.3-2
 [themata_2021]: https://apps1.minedu.gov.gr/themata/PLHROFORIKH_NEO_HM_2021_10.pdf
 [themata_epan_2021]: https://apps1.minedu.gov.gr/themata/ΑΝΑΠΤΥΞΗ_ΕΦΑΡΜΟΓΩΝ_ΕΠΑΝΑΛ_2021_17.pdf
 
-[themata_2022]: https://kathigitis-aepp.gr/wp-content/uploads/2022/06/themata-aepp-panellinies-2022.pdf
+[themata_2022]: https://apps1.minedu.gov.gr/themata/ΠΛΗΡΟΦΟΡΙΚΗ_ΝΕΟ_ΗΜ_2022_1.pdf
 [lyseis_2022]:  https://kathigitis-aepp.gr/wp-content/uploads/2022/06/liseis-aepp-panellinies-2022.pdf
-[themata_epan_2022]: https://drive.google.com/file/d/1AKojPuN-Lh2803BcEFo0-96GMFT78Huh/view?usp=sharing
+[themata_epan_2022]: https://apps1.minedu.gov.gr/themata/202209_them_pliroforiki_gel_220912.pdf
 [lyseis_epan_2022]: https://drive.google.com/file/d/1AVsQ3KqDFXU6iRg5e4E-YMjxbO_CM741/view?usp=sharing
 
-[themata_2023]: https://kathigitis-aepp.gr/wp-content/uploads/2023/06/themata-panelliniwn-aepp-2023.pdf
+[themata_2023]: https://apps1.minedu.gov.gr/themata/202306_ΠΛΗΡΟΦΟΡΙΚΗ_ΝΕΟ_ΗΜ_2023_1.pdf
 [lyseis_2023]:  https://kathigitis-aepp.gr/wp-content/uploads/2023/06/liseis-panelliniwn-aepp-2023.pdf
 [themata_epan_2023]: https://drive.google.com/file/d/1eC1aWdlFdOBWEZYaru5QlLDbCUy5MjKm/view?usp=drive_link
 [lyseis_epan_2023]: https://drive.google.com/file/d/1dgKVgerNU7uxN_nFI_t4Dphp4nbu-DR-/view?usp=drive_link
