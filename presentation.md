@@ -731,6 +731,12 @@ layout: true
 
 ---
 
+#### Παραδείγματα (Θέματα Πανελλαδικών)
+
+- [2024 επαν. / Θέμα Α3][themata_epan_2024] ([Λύσεις][lyseis_epan_2024])
+
+---
+
 ### Παρατηρήσεις
 
 - Είναι αναγκαία η χρήση σταθερών;
@@ -1554,8 +1560,10 @@ template: 8.1
 - [2015 / Θέμα Α5 - α.][themata_2015] ([Λύσεις][lyseis_2015])
   - Εντολές εκχώρησης
   - Λογικές εκφράσεις
-- [2020 επαν. (Νέο Σύστημα) / Θέμα Α3][themata_epan_ns_2020]
+- [2020 επαν. (Νέο Σύστημα) / Θέμα Α3][themata_epan_ns_2020] ([Λύσεις][lyseis_epan_ns_2020])
   - Αποτίμηση σύνθετης λογικής έκφρασης
+- [2024 επαν. / Θέμα Α2][themata_epan_2024] ([Λύσεις][lyseis_epan_2024])
+  - Τελεστές, συναρτήσεις
 
 ---
 layout: true
@@ -2140,7 +2148,7 @@ template: 8.1.1
 ---
 
 | ΠΟΣΟΤΗΤΑ     | ΤΙΜΗ ΜΟΝΑΔΑΣ |
-| ------------ | ------------ |
+| ------------ |:------------:|
 | 1-50         | 580          |
 | 51-100       | 520          |
 | 101-200      | 470          |
@@ -2383,9 +2391,19 @@ template: 8.1.1
 
 ---
 
+#### Εκσφαλμάτωση σε Πολλαπλή Επιλογή
+
+- [2012 επαν. / Θέμα Α3][themata_epan_2012] ([Λύσεις][lyseis_epan_2012])
+- [2015 / Θέμα Α5 - β.][themata_2015] ([Λύσεις][lyseis_2015])
+
+---
+
 #### Ασκήσεις μετατροπών μεταξύ διαφορετικών μορφών της εντολής `ΑΝ`
 
-- Μετατροπή Σύνθετης `ΑΝ` σε Απλή
+- Μετατροπή διαδοχικών Απλών Επιλογών σε Πολλαπλή
+  - [2021 επαν. / Θέμα Α5][themata_epan_2021]
+  - [2024 επαν. / Θέμα Β2][themata_epan_2024]
+- Μετατροπή Σύνθετης Επιλογής σε Απλή
   - [2019 επαν. / Θέμα Α4][themata_epan_2019] ([Λύσεις][lyseis_epan_2019])
 - Περιττοί έλεγχοι σε Πολλαπλή Επιλογή
   - [2006 επαν. / Θέμα 1ο - Β][themata_epan_2006]
@@ -2760,7 +2778,7 @@ class: longest
 > Μια δημοτική αρχή ακολουθεί την εξής τιμολογιακή πολιτική για την κατανάλωση νερού ανά μήνα: Χρεώνει πάγιο ποσό 12€ και εφαρμόζει κλιμακωτή χρέωση σύμφωνα με τον παρακάτω πίνακα:
 
 | Κατανάλωση νερού σε κυβικά | Χρέωση ανά κυβικό |
-| -------------------------- | ----------------- |
+| -------------------------- |:-----------------:|
 | Από 0 έως και 5            | δωρεάν            |
 | Από 5 έως και 10           | 0,5 €             |
 | Από 10 έως και 20          | 0,7 €             |
@@ -2798,40 +2816,6 @@ class: longest
   Τελ_Ποσό <- Τ_Αξία + ΦΠΑ + 10
   ΓΡΑΨΕ 'Ποσό πληρωμής νερού:', Τελ_Ποσό
 ΤΕΛΟΣ_ΠΡΟΓΡΑΜΜΑΤΟΣ Νερό
-```
-
----
-
-```
-ΠΡΟΓΡΑΜΜΑ Θέμα_3ο_2004_παραλλαγή
-ΜΕΤΑΒΛΗΤΕΣ
-  ΠΡΑΓΜΑΤΙΚΕΣ: βάρος, χρ
-  ΧΑΡΑΚΤΗΡΕΣ: πρ
-ΑΡΧΗ
-  ΔΙΑΒΑΣΕ βάρος, πρ
-  βάρος <- βάρος / 1000
-  ΕΠΙΛΕΞΕ πρ
-    ΠΕΡΙΠΤΩΣΗ 'ΕΣ'
-      ΕΠΙΛΕΞΕ βάρος
-        ΠΕΡΙΠΤΩΣΗ <= 0.5
-          χρ <- βάρος * 2.0
-        ΠΕΡΙΠΤΩΣΗ <= 1
-          χρ <- 0.5 * 2.0 + (βάρος - 0.5) * 3.5
-        ΠΕΡΙΠΤΩΣΗ <= 2
-          χρ <- 0.5 * 2.0 + 0.5 * 3.5 + (βάρος - 1) * 4.6
-      ΤΕΛΟΣ_ΕΠΙΛΟΓΩΝ
-    ΠΕΡΙΠΤΩΣΗ 'ΕΞ'
-      ΕΠΙΛΕΞΕ βάρος
-        ΠΕΡΙΠΤΩΣΗ <= 0.5
-          χρ <- βάρος * 4.8
-        ΠΕΡΙΠΤΩΣΗ <= 1
-          χρ <- 0.5 * 4.8 + (βάρος - 0.5) * 7.2
-        ΠΕΡΙΠΤΩΣΗ <= 2
-          χρ <- 0.5 * 4.8 + 0.5 * 7.2 + (βάρος - 2) * 11.5
-      ΤΕΛΟΣ_ΕΠΙΛΟΓΩΝ
-  ΤΕΛΟΣ_ΕΠΙΛΟΓΩΝ
-  ΓΡΑΨΕ χρ
-ΤΕΛΟΣ_ΠΡΟΓΡΑΜΜΑΤΟΣ
 ```
 
 ---
@@ -5203,7 +5187,9 @@ template: loop-conversions
 - [2011 επαν. / Θέμα Α3.α][themata_epan_2011] ([Λύσεις][lyseis_epan_2011])
 - [2015 / Θέμα Β1.β][themata_2015] ([Λύσεις][lyseis_2015])
 - [2017 / Θέμα Α4][themata_2017] ([Λύσεις][lyseis_2017])
+- [2021 επαν. / Θέμα Α4][themata_epan_2021] ([Λύσεις][lyseis_epan_2021])
 - [2022 / Θέμα Β2.β][themata_2022] ([Λύσεις][lyseis_2022])
+- [2024 / Θέμα Β1][themata_2024] ([Λύσεις][lyseis_2024])
 
 ---
 template: 2.4.5
@@ -5219,6 +5205,7 @@ template: 2.4.5
   - [2012 επαν. / Θέμα Β1][themata_epan_2012] ([Λύσεις][lyseis_epan_2012]) (εμφωλευμένες `ΓΙΑ`)
   - [2013 / Θέμα Β1][themata_2013] ([Λύσεις][lyseis_2013]) (`ΑΝ` & `ΟΣΟ`)
   - [2015 / Θέμα Β1.α][themata_2015] ([Λύσεις][lyseis_2015]) (`ΑΝ` & `ΜΕΧΡΙΣ_ΟΤΟΥ`)
+  - [2021 / Θέμα Β1][themata_2021] (`ΜΕΧΡΙΣ_ΟΤΟΥ` & `ΓΙΑ`)
   - [2022 / Θέμα Β2.α][themata_2022] ([Λύσεις][lyseis_2022]) (`ΑΝ` & `ΜΕΧΡΙΣ_ΟΤΟΥ`)
 - Διάγραμμα Ροής → Αλγόριθμο
   - [2006 / Θέμα 2ο - 1.α][themata_2006] (`ΓΙΑ` & `ΑΝ`)
@@ -5348,6 +5335,12 @@ layout: true
 .footnote[
   [ΑΕΠΠ - Βιβλίο Μαθητή, §2.4.5, σελ.234](books/22-0203.pdf#page=235)
 ]
+
+---
+
+#### Παραδείγματα (Θέματα Πανελλαδικών)
+
+- [2024 / Θέμα Α2][themata_2024] ([Λύσεις][lyseis_epan_2024])
 
 ---
 layout: true
@@ -5692,7 +5685,7 @@ template: 5.2.1-2
 
 ---
 
-- [2012 επαν  . / Θέμα Α3][themata_epan_2012] ([Λύσεις][lyseis_epan_2012])
+- [2012 επαν. / Θέμα Α3][themata_epan_2012] ([Λύσεις][lyseis_epan_2012])
 - [2015 / Θέμα Α5 - β.][themata_2015] ([Λύσεις][lyseis_2015])
 
 ---
@@ -10155,6 +10148,8 @@ max <- Π[1,2]
   - Κάτω τριγωνικός
 - [2023 επαν. / Θέμα Β3][themata_epan_2023] ([Λύσεις][lyseis_epan_2023])
   - Κύρια & Δευτερεύουσα διαγώνιος
+- [2024 / Θέμα Β2][themata_2024] ([Λύσεις][lyseis_2024])
+  - Μονές & ζυγές γραμμές
 
 ---
 layout: true
@@ -11097,6 +11092,7 @@ class: long
 - [2021 / Θέμα Β2][themata_2021]
 - [2022 / Θέμα Β1][themata_2022] ([Λύσεις][lyseis_2022])
 - [2023 / Θέμα Β3][themata_2023] ([Λύσεις][lyseis_2023])
+- [2024 / Θέμα Β3][themata_2024] ([Λύσεις][lyseis_2024])
 
 ---
 layout: true
@@ -11510,6 +11506,8 @@ layout: true
   - Διαδικασία → Κύριο Πρόγραμμα
 - [2022 επάν. / Α4][themata_epan_2022]
   - Συνάρτηση → Διαδικασία
+- [2024 / Β4][themata_2024]
+  - Διαδικασία → Συνάρτηση
 
 ---
 layout: true
@@ -11987,9 +11985,12 @@ template: 1.3-2
 [lyseis_ns_2020]:  https://aepp.edu.gr/files/lyseis_pliroforiki_2020_imerisia_esperina_neo.pdf
 [themata_epan_ps_2020]: https://aepp.edu.gr/files/aepp_2020_imerisia_esperina_palaio_epanaliptikes.pdf
 [themata_epan_ns_2020]: https://aepp.edu.gr/files/pliroforiki_2020_imerisia_esperina_epanaliptikes.pdf
+[lyseis_epan_ns_2020]: https://drive.google.com/file/d/1vIofqFoN_mPEO4A7u4ms8AvDxbucFYW-/view
 
 [themata_2021]: https://apps1.minedu.gov.gr/themata/PLHROFORIKH_NEO_HM_2021_10.pdf
+[lyseis_2021]:  https://drive.google.com/file/d/1sg8sXsLBeu3z3BxOJRsequqOWz5q4ylP/view
 [themata_epan_2021]: https://apps1.minedu.gov.gr/themata/ΑΝΑΠΤΥΞΗ_ΕΦΑΡΜΟΓΩΝ_ΕΠΑΝΑΛ_2021_17.pdf
+[lyseis_epan_2021]:  https://drive.google.com/file/d/1b7VotKA2IBxU-CvP8O080in58hJgmvL7/view
 
 [themata_2022]: https://apps1.minedu.gov.gr/themata/ΠΛΗΡΟΦΟΡΙΚΗ_ΝΕΟ_ΗΜ_2022_1.pdf
 [lyseis_2022]:  https://kathigitis-aepp.gr/wp-content/uploads/2022/06/liseis-aepp-panellinies-2022.pdf
@@ -12000,3 +12001,8 @@ template: 1.3-2
 [lyseis_2023]:  https://kathigitis-aepp.gr/wp-content/uploads/2023/06/liseis-panelliniwn-aepp-2023.pdf
 [themata_epan_2023]: https://drive.google.com/file/d/1eC1aWdlFdOBWEZYaru5QlLDbCUy5MjKm/view?usp=drive_link
 [lyseis_epan_2023]: https://drive.google.com/file/d/1dgKVgerNU7uxN_nFI_t4Dphp4nbu-DR-/view?usp=drive_link
+
+[themata_2024]: https://apps1.minedu.gov.gr/themata/2024_06_them_plirof_gel_240606.pdf
+[lyseis_2024]:  https://www.panellinies.net/wp-content/uploads/2024/06/aepp_2024_ap14.pdf
+[themata_epan_2024]: https://drive.google.com/file/d/1GEApMnvz1eM4jpQhJ0PMWWCdJkFop8TP/view
+[lyseis_epan_2024]:  https://drive.google.com/file/d/1E4ilvVVKwcN0bOXMuNVfK4Cwp4oOgeG6/view
