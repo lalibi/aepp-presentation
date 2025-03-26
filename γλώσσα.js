@@ -4,7 +4,7 @@ Language: Γλώσσα
 
 // Language definition guide — highlight.js 9.8.0 documentation - https://goo.gl/jZzggF
 var glossa = function(hljs) {
-	var IDENT_RE_EL = '[a-zA-Zα-ωΑ-Ω][a-zA-Zα-ωΑ-Ω0-9_]*';
+	var IDENT_RE_EL = '[a-zA-Zα-ωΑ-Ωά-ώΆ-Ώ][a-zA-Zα-ωΑ-Ωά-ώΆ-Ώ0-9_]*';
 	var KEYWORDS = {
 		keyword:
 			'ΠΡΟΓΡΑΜΜΑ ΣΥΝΑΡΤΗΣΗ ΔΙΑΔΙΚΑΣΙΑ ΑΡΧΗ ΤΕΛΟΣ_ΠΡΟΓΡΑΜΜΑΤΟΣ ΤΕΛΟΣ_ΣΥΝΑΡΤΗΣΗΣ ΤΕΛΟΣ_ΔΙΑΔΙΚΑΣΙΑΣ ' +
@@ -38,20 +38,6 @@ var glossa = function(hljs) {
 		begin: /\+|\-|\*|\/|\^|<|>|=|\[|\]|\(|\)|&/
 	};
 
-	var FUNCTION = {
-		className: 'function',
-		beginKeywords: 'function constructor destructor procedure', end: /[:;]/,
-		keywords: 'function constructor|10 destructor|10 procedure|10',
-		contains: [
-			hljs.TITLE_MODE,
-			{
-				className: 'params',
-				begin: /\(/, end: /\)/,
-				keywords: KEYWORDS,
-				contains: [STRING].concat(COMMENT_MODES)
-			}
-		].concat(COMMENT_MODES)
-	};
 	return {
 		aliases: ['glo', 'glossa'],
 		case_insensitive: false,
