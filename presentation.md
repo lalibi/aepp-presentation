@@ -1030,6 +1030,8 @@ y <- 2^x   !Το y πρέπει να δηλωθεί στις πραγματικ�
   - Αριθμητική έκφραση σε ΓΛΩΣΣΑ
 - [2020 επαν. (Νέο Σύστημα) / Θέμα Α5][themata_epan_ns_2020]
   - Αριθμητική έκφραση σε ΓΛΩΣΣΑ
+- [2025 επαν. / Θέμα Α2][themata_epan_2025] ([Λύσεις][lyseis_epan_2025])
+  - Αριθμητική έκφραση σε ΓΛΩΣΣΑ
 
 ---
 layout: true
@@ -1105,6 +1107,8 @@ x <- x + 1
   - Συμπλήρωση (_εκτός του 3_)
 - [2015 / Θέμα Α4 - α.][themata_2015] ([Λύσεις][lyseis_2015])
   - Ισοδύναμη εντολή εκχώρησης
+- [2025 επαν. / Θέμα Α3][themata_epan_2025] ([Λύσεις][lyseis_epan_2025])
+  - Τύπος μεταβλητής
 
 ---
 
@@ -5339,6 +5343,7 @@ template: 2.4.5
   - [2013 επαν. / Θέμα Β1][themata_epan_2013] ([Λύσεις][lyseis_epan_2013]) (`ΑΝ` & `ΟΣΟ` / `ΓΙΑ`)
   - [2014 / Θέμα Β2][themata_2014] ([Λύσεις][lyseis_2014]) (`ΟΣΟ` με παγίδα)
   - [2018 / Θέμα Β2][themata_2018] ([Λύσεις][lyseis_2018]) (`ΟΣΟ` / `ΜΕΧΡΙΣ_ΟΤΟΥ` όχι συνηθισμένη)
+  - [2025 / Θέμα Β2][themata_2025] ([Λύσεις][lyseis_2025]) (`ΟΣΟ` / `ΜΕΧΡΙΣ_ΟΤΟΥ`)
 
 ---
 template: 2.4.5
@@ -10699,6 +10704,9 @@ max <- Π[1,2]
 - [2024 / Θέμα Β2][themata_2024] ([Λύσεις][lyseis_2024])
   - Μονές & ζυγές γραμμές
   - Αναφέρει τετραγωνικό πίνακα, αν και θα μπορούσε να είναι οποιοσδήποτε δισδιάστατος
+- [2025 / Θέμα Β3][themata_2025] ([Λύσεις][lyseis_2025])
+  - Κύρια & Δευτερεύουσα διαγώνιος
+  - Συμπλήρωση κενών σε συνάρτηση
 
 ---
 layout: true
@@ -11996,8 +12004,10 @@ layout: true
   - Διαδικασία → Κύριο Πρόγραμμα
 - [2022 επάν. / Α4][themata_epan_2022]
   - Συνάρτηση → Διαδικασία
-- [2024 / Β4][themata_2024]
+- [2024 / Β4][themata_2024] ([Λύσεις][lyseis_2024])
   - Διαδικασία → Συνάρτηση
+- [2025 επαν. / Β3][themata_epan_2025] ([Λύσεις][lyseis_epan_2025])
+  - Συνάρτηση → Διαδικασία
 
 ---
 layout: true
@@ -12332,6 +12342,7 @@ template: 1.3-2
 - [2022 / Θέμα Α2.β][themata_2022] ([Λύσεις][lyseis_2022])
 - [2023 / Θέμα Α2][themata_2023] ([Λύσεις][lyseis_2023])
 - [2023 επαν. / Θέμα Α2][themata_epan_2023] ([Λύσεις][lyseis_epan_2023])
+- [2025 επαν. / Θέμα Β1][themata_epan_2025] ([Λύσεις][lyseis_epan_2025])
 
 ---
 
@@ -12475,7 +12486,7 @@ template: 1.3-2
 [lyseis_ns_2020]:  https://aepp.edu.gr/files/lyseis_pliroforiki_2020_imerisia_esperina_neo.pdf
 [themata_epan_ps_2020]: https://aepp.edu.gr/files/aepp_2020_imerisia_esperina_palaio_epanaliptikes.pdf
 [themata_epan_ns_2020]: https://aepp.edu.gr/files/pliroforiki_2020_imerisia_esperina_epanaliptikes.pdf
-[lyseis_epan_ns_2020]: https://drive.google.com/file/d/1vIofqFoN_mPEO4A7u4ms8AvDxbucFYW-/view
+[lyseis_epan_ns_2020]:  https://drive.google.com/file/d/1vIofqFoN_mPEO4A7u4ms8AvDxbucFYW-/view
 
 [themata_2021]: https://apps1.minedu.gov.gr/themata/PLHROFORIKH_NEO_HM_2021_10.pdf
 [lyseis_2021]:  https://drive.google.com/file/d/1sg8sXsLBeu3z3BxOJRsequqOWz5q4ylP/view
@@ -12485,14 +12496,19 @@ template: 1.3-2
 [themata_2022]: https://apps1.minedu.gov.gr/themata/ΠΛΗΡΟΦΟΡΙΚΗ_ΝΕΟ_ΗΜ_2022_1.pdf
 [lyseis_2022]:  https://kathigitis-aepp.gr/wp-content/uploads/2022/06/liseis-aepp-panellinies-2022.pdf
 [themata_epan_2022]: https://apps1.minedu.gov.gr/themata/202209_them_pliroforiki_gel_220912.pdf
-[lyseis_epan_2022]: https://drive.google.com/file/d/1AVsQ3KqDFXU6iRg5e4E-YMjxbO_CM741/view?usp=sharing
+[lyseis_epan_2022]:  https://drive.google.com/file/d/1AVsQ3KqDFXU6iRg5e4E-YMjxbO_CM741/view?usp=sharing
 
 [themata_2023]: https://apps1.minedu.gov.gr/themata/202306_ΠΛΗΡΟΦΟΡΙΚΗ_ΝΕΟ_ΗΜ_2023_1.pdf
 [lyseis_2023]:  https://kathigitis-aepp.gr/wp-content/uploads/2023/06/liseis-panelliniwn-aepp-2023.pdf
 [themata_epan_2023]: https://drive.google.com/file/d/1eC1aWdlFdOBWEZYaru5QlLDbCUy5MjKm/view?usp=drive_link
-[lyseis_epan_2023]: https://drive.google.com/file/d/1dgKVgerNU7uxN_nFI_t4Dphp4nbu-DR-/view?usp=drive_link
+[lyseis_epan_2023]:  https://drive.google.com/file/d/1dgKVgerNU7uxN_nFI_t4Dphp4nbu-DR-/view?usp=drive_link
 
 [themata_2024]: https://apps1.minedu.gov.gr/themata/2024_06_them_plirof_gel_240606.pdf
 [lyseis_2024]:  https://www.panellinies.net/wp-content/uploads/2024/06/aepp_2024_ap14.pdf
 [themata_epan_2024]: https://drive.google.com/file/d/1GEApMnvz1eM4jpQhJ0PMWWCdJkFop8TP/view
 [lyseis_epan_2024]:  https://drive.google.com/file/d/1E4ilvVVKwcN0bOXMuNVfK4Cwp4oOgeG6/view
+
+[themata_2025]: https://apps1.minedu.gov.gr/themata/them_plirof_gel_250604.pdf
+[lyseis_2025]:  https://www.panellinies.net/wp-content/uploads/2025_them/2025_them_gel/aepp_2025_ap15.pdf
+[themata_epan_2025]: https://drive.google.com/file/d/1OZ1L9UhtXAYEr1omb1LBUWHdkUXMTAYk/view
+[lyseis_epan_2025]:  https://drive.google.com/file/d/1PCmqSCdVkCxUkcM-yS6bz81Kydq40kd9/view
